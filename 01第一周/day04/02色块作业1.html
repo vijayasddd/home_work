@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        /* 头部 */
+        .toubu{
+            width: 458px;
+            height: 38px;
+            background-color:#ffffff;
+        }
+        .toubu1{
+            width: 83px;
+            height: 26px;
+            background-color: #93aad6;
+            float: left;
+            margin-right: 126px;
+            margin-bottom: 12px;
+        }
+        .toubu2{
+            width: 249px;
+            height: 26px;
+            background-color: #93aad6;
+            float: left;
+            margin-bottom: 12px;
+        }
+        /* 颈部 */
+        .jingbu{
+            width: 458px;
+            height: 257px;
+            background-color: #93aad6;
+        }
+        /* 广告区 */
+        .ad{
+            width: 458px;
+            height: 78px;
+            background-color: #ffffff;
+        }
+        .ad1{
+            width: 156px;
+            height: 37px;
+            background-color: #93aad6;
+            margin: 22px 151px 20px;
+        }
+        /* 信息区 */
+        .info{
+            width: 458px;
+            height: 78px;
+            background-color: #ffffff;
+        }
+        .info1,.info2,.info3,.info4{
+            width: 80px;
+            height: 78px;
+            background-color:#93aad6 ;
+            float: left;
+        }
+        .info1,.info2,.info3{
+            margin:0 17px;
+        }
+        .info4{
+            margin-left: 14px;
+        }
+        /* 图片区域 */
+        .image{
+            width: 458px;
+            height: 101px;
+            background-color: #ffffff;
+        }
+        .image1{
+            width: 458px;
+            height: 56px;
+            background-color: #93aad6;
+            margin: 31px 0 15px 0;
+        }
+        /* 间隔区 */
+        .center{
+            width: 458px;
+            height: 34px;
+            background-color: #ffffff;
+        }
+        .center1{
+            width: 458px;
+            height: 11px;
+            background-color: #93aad6;
+        }
+        /* 新闻区 */
+        .new{
+            width: 458px;
+            height: 134px;
+            background-color: #ffffff;
+        }
+        .new1, .new2, .new3, .new4{
+            width: 95px;
+            height: 134px;
+            background-color: #93aad6;
+            float: left;
+        }
+        .new1{
+            margin-left: 28px;
+        }
+        .new1, .new2, .new3{
+            margin-right: 9px;
+        }
+        /* 腰部区域 */
+        .yaobu{
+            width: 458px;
+            height: 124px;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        .yaobu1{
+            width: 458px;
+            height: 20px;
+            background-color: #93aad6;
+            margin-top: 18px;
+            margin-bottom: 27px;
+        }
+        .yaobu2{
+            width: 458px;
+            height: 52px;
+            background-color: #93aad6;
+            margin-bottom: 7px;
+        }
+        /* 正文区域 */
+        .msg{
+            width: 458px;
+            height: 357px;
+            background-color: #ffffff;
+        }
+        .msg1, .msg2, .msg3, .msg4, .msg5, .msg6{
+            width: 137px;
+            height: 138px;
+            background-color: #93aad6;
+            float: left;
+        }
+        .msg1, .msg2, .msg4, .msg5{
+            margin-right: 23px;
+        }
+        .msg1, .msg2, .msg3{
+            margin-bottom: 38px;
+        }
+        .msg4, .msg5, .msg6{
+            margin-bottom: 46px;
+        }
+        /* 其他区域 */
+        .area{
+            width: 458px;
+            height: 94px;
+            background-color: #ffffff;
+        }
+        .area-l{
+            width: 109px;
+            height: 78px;
+            background-color: #93aad6;
+            float: left;
+            margin-right: 37px;
+        }
+        .area-r{
+            width: 312px;
+            height: 78px;
+            background-color: #ffffff;
+            float: left;
+        }
+        .shang{
+            width: 312px;
+            height: 39px;
+            background-color: #93aad6;
+            margin-bottom: 20px;
+        }
+        .xia{
+            width: 312px;
+            height: 20px;
+            background-color: #93aad6;
+        }
+        /* 腿部区域 */
+        .tuibu{
+            width: 458px;
+            height: 148px;
+            background-color: #ffffff;
+        }
+        .tuibu1{
+            width: 133px;
+            height: 148px;
+            background-color: #93aad6;
+            float: left;
+            margin-right: 17px;
+        }
+        .tuibu2{
+            width: 308px;
+            height: 108px;
+            background-color: #93aad6;
+            float: left;
+            margin-bottom: 40px;
+        }
+        /* 脚踝区域 */
+        .jiaohuai{
+            width: 458px;
+            height: 214px;
+            background-color:#ffffff;
+        }
+        .jiaohuai1{
+            width: 132px;
+            height: 178px;
+            background-color: #93aad6;
+            float: left;
+            margin-right: 25px;
+        }
+        .jiaohuai2{
+            width: 151px;
+            height: 178px;
+            background-color: #93aad6;
+            margin-right: 25px;
+            float: left;
+        }
+        .jiaohuai3{
+            width: 125px;
+            height: 214px;
+            background-color: #93aad6;
+            float: left;
+        }
+        /* 脚背区域 */
+       .jiaobei{
+            width: 458px;
+            height: 109px;
+            background-color: #ffffff;
+        }
+        .jiaobei-top{
+            width: 458px;
+            height: 73px;
+            background-color: #ffffff;
+        }
+        .jiaobei1{
+            width: 326px;
+            height: 59px;
+            background-color: #93aad6;
+            float: left;
+            margin-right: 7px;
+
+        }
+        .jiaobei2{
+            width: 125px;
+            height: 59px;
+            background-color: #93aad6;
+            float: left;
+        }
+        .jiaobei3{
+            width: 208px;
+            height: 30px;
+            background-color: #93aad6;
+        }
+        /* 底部区域 */
+        .foot{
+            width: 458px;
+            height: 156px;
+            background-color: #ffffff;
+        }
+        .foot1{
+            width: 209px;
+            height: 36px;
+            background-color: #93aad6;
+            margin-left: 249px;
+            margin-bottom: 7px;
+        }
+       .foot2{
+        width: 153px;
+        height: 35px;
+        background-color: #93aad6;
+        margin-bottom: 24px;
+       }
+       .foot3{
+        width: 216px;
+        height: 30px;
+        background-color: #93aad6;
+        margin-left: 242px;
+        margin-bottom: 8px;
+       }
+       .foot4{
+        width: 458px;
+        height: 20px;
+        background-color: #93aad6;
+       }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="toubu">
+        <div class="toubu1"></div>
+        <div class="toubu2"></div>
+    </div>
+    <!-- 颈部 -->
+    <div class="jingbu"></div>
+    <!-- 广告区 -->
+    <div class="ad">
+        <div class="ad1"></div>
+    </div>
+    <!-- 信息区 -->
+    <div class="info">
+        <div class="info1"></div>
+        <div class="info2"></div>
+        <div class="info3"></div>
+        <div class="info4"></div>
+    </div>
+    <!-- 图片区域 -->
+    <div class="image">
+        <div class="image1"></div>
+    </div>
+    <!-- 间隔区 -->
+    <div class="center">
+        <div class="center1"></div>
+    </div>
+    <!-- 新闻区 -->
+    <div class="new">
+        <div class="new1"></div>
+        <div class="new2"></div>
+        <div class="new3"></div>
+        <div class="new4"></div>
+    </div>
+    <!-- 腰部区 -->
+    <div class="yaobu">
+        <div class="yaobu1"></div>
+        <div class="yaobu2"></div>
+    </div>
+    <!-- 正文区域 -->
+    <div class="msg">
+        <div class="msg1"></div>
+        <div class="msg2"></div>
+        <div class="msg3"></div>
+        <div class="msg4"></div>
+        <div class="msg5"></div>
+        <div class="msg6"></div>
+    </div>
+    <!-- 其他区域 -->
+    <div class="area">
+        <div class="area-l"></div>
+        <div class="area-r">
+            <div class="shang"></div>
+            <div class="xia"></div>
+        </div>
+    </div>
+    <!-- 腿部区域 -->
+    <div class="tuibu">
+        <div class="tuibu1"></div>
+        <div class="tuibu2"></div>
+    </div>
+    <!-- 脚踝区域 -->
+    <div class="jiaohuai">
+        <div class="jiaohuai1"></div>
+        <div class="jiaohuai2"></div>
+        <div class="jiaohuai3"></div>
+    </div>
+    <!-- 脚背区域 -->
+    <div class="jiaobei">
+        <div class="jiaobei-top">
+            <div class="jiaobei1"></div>
+        <div class="jiaobei2"></div>
+        </div>
+        <div class="jiaobei3"></div>
+    </div>
+    <!-- 底部区域 -->
+    <div class="foot">
+        <div class="foot1"></div>
+        <div class="foot2"></div>
+        <div class="foot3"></div>
+        <div class="foot4"></div>
+    </div>
+</body>
+</html>

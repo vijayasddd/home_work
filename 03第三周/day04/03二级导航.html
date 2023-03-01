@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .boss {
+            width: 100%;
+            height: 50px;
+            background: rgb(178, 129, 129);
+        }
+
+        .nav {
+            width: 800px;
+            height: 50px;
+            background: rgb(183, 206, 135);
+            margin: 0 auto;
+        }
+        .nav ul{
+            width: 800px;
+            height: 50px;
+        }
+
+        .nav li {
+            width: 200px;
+            height: 50px;
+            list-style: none;
+            float: left;
+            line-height: 50px;
+            text-align: center;
+            position: relative;
+            /* overflow: hidden; */
+        }
+        .nav p{
+            width: 200px;
+            height: 50px;
+        }
+        .nav .li1{
+          width: 100px;
+          height: 50px;
+          background: rgb(176, 97, 97); 
+        }
+        .nav li:hover{
+            background: rgb(222, 85, 85);
+        }
+       .nav1 li:hover .nav2{
+            /* opacity: 1; */
+            display: block;
+        }
+        /* .nav2 li:hover .nav2{
+            opacity: 0;
+        } */
+        .nav2{
+            width: 200px;
+            height: 300px;
+            background: rgb(219, 191, 106);
+            position: absolute;
+            left: 0;
+            bottom: -300px;
+            /* opacity: 0; */
+            display: none;
+        }
+        .nav2 p{
+            width: 200px;
+            height: 60px;
+            float: left;
+        }
+        .nav2 p:hover{
+            background: rgb(198, 83, 83);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boss">
+        <!-- 一级导航 -->
+        <div class="nav">
+            <ul class="nav1">
+                <li class="li1">首页</li>
+                <li class="li2">
+                    <p class="p1">女子专区</p>
+                    <!-- 二级导航 -->
+                    <div class="nav2">
+                       <p><a href="#">运动鞋</a></p>
+                       <p><a href="#">高跟鞋</a></p>
+                       <p><a href="#">凉鞋</a></p>
+                       <p><a href="#">马丁鞋</a></p>
+                    </div>
+                </li>
+                <li class="li3"><p>男子专区</p></li>
+                <li class="li4"><p>运动鞋类</p></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

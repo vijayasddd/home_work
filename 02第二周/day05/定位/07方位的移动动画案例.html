@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 220px;
+            height: 200px;
+            background-color: aqua;
+            margin: 200px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .box img{
+            width: 220px;
+            height: 200px;
+        }
+        .box .box1{
+            width: 220px;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: 0;
+            top: -200px;
+            transition: 2s;
+        }
+        .box:hover .box1{
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="box">
+    <img src="../image/截屏2023-02-13 上午9.51.09.png" alt="">
+    <div class="box1"></div>
+  </div>
+</body>
+</html>

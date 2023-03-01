@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .left{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            float: left;
+        }
+        .right{
+            /* width: 200px; */
+            height: 300px;
+            background-color: blue;
+            /* margin-left: 200px; */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="left"></div>
+    <div class="right"></div>
+    <!-- 
+        BFC "block formatting context",直译为块级格式化上下文，指的是一块独立渲染的区域，触发了BFC的容器里面的子元素会有自己的排列方式，和容器外面互补影响
+
+        触发BFC的一些原因？
+           +1、html
+           +2、float不为none；
+           +3、overflow:hidden/auto/scroll/值不为visible就行
+           +4、绝对定位和固定定位
+           +5、display:inline-block/flex/table-cell/table-caption/inline-flex
+
+        BFC的一些特性
+        一、Bfc区域的盒子默认上下排列，如果给相邻的两个盒子都添加了margin的话，大的margin会覆盖小的margin，发生margin重叠现象
+              +解决方法1，给其中的一个子元素添加父元素，并且让父元素触发BFC
+              +解决方法2，不给两个盒子都添加margin
+        二、元素的margin和border是跟着元素走的，包括元素都是这样
+        三、BFC的区域不会与float box重叠，可以实现两栏布局
+              如何实现两栏布局？(一般用于后台管理系统)
+                +两个盒子，左边盒子给宽和浮动，右边不给宽，给overflow:hidden
+                +两个盒子，左边盒子给宽和浮动，右边不给宽，给margin-left
+     -->
+</body>
+</html>

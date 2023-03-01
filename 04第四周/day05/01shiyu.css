@@ -1,0 +1,609 @@
+/* 导航区域开始 */
+.big-nav {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.nav {
+    width: 1181px;
+    height: 82px;
+    margin: 0 auto;
+    padding-bottom: 21px;
+    display: flex;
+}
+
+.nav1 {
+    width: 493px;
+}
+
+.nav2 {
+    width: 689px;
+}
+
+.nav2 ul {
+    display: flex;
+    line-height: 61px;
+}
+
+.nav2 ul li {
+    padding: 0 21px;
+}
+
+.nav2 ul li:hover {
+    border-bottom: 2px solid #f13a3a;
+}
+
+.nav2 ul li:hover a {
+    color: #f13a3a;
+}
+
+.nav2 li a {
+    color: #000000;
+}
+
+.nav2 .li1 {
+    color: #f13a3a;
+    border-bottom: 2px solid #f13a3a;
+}
+
+/* 导航区域结束 */
+
+/* 广告区域开始 */
+.big-banner {
+    width: 100%;
+    height: 912px;
+    background-color: #1b252e;
+    margin-top: 82px;
+}
+
+.big-banner img {
+    width: 100%;
+    height: 700px;
+}
+
+.banner {
+    width: 1081px;
+    height: 212px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.banner-idea {
+    width: 774px;
+    height: 100%;
+    padding-top: 55px;
+}
+
+.banner-idea h4 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.banner-idea p {
+    height: 33px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.banner-button {
+    width: 307px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.banner-button button:hover {
+    background-color: #f13a3a;
+}
+
+.banner-button button {
+    width: 166px;
+    height: 55px;
+    border-radius: 60px;
+    color: #1b252e;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* 广告区域结束 */
+
+/* 服务区域开始 */
+.big-serve {
+    width: 100%;
+    background-color: #fff;
+}
+
+.serve {
+    width: 1066px;
+    margin: 0 auto;
+}
+
+.serve-top {
+    width: 100%;
+    height: 187px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    overflow: hidden;
+}
+
+.serve-top h1 {
+    color: #000;
+    font-size: 38px;
+    margin-top: 90px;
+}
+
+.serve-bottom {
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.serve-b {
+    width: 25%;
+    height: 412px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.serve-b img {
+    margin-top: 45px;
+    margin-bottom: 56px;
+}
+
+.serve-b h3 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.serve-b p {
+    color: #999999;
+    font-size: 12px;
+}
+
+/* 服务区域结束 */
+
+/* 案例区域开始 */
+.big-case {
+    width: 100%;
+}
+
+.case {
+    width: 1181px;
+    margin: 0 auto;
+}
+
+.case-top {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 43px;
+}
+
+.case-top h1 {
+    color: #000;
+    font-size: 32px;
+    margin-top: 66px;
+    margin-bottom: 10px;
+}
+
+.case-top p {
+    color: #999999;
+    font-size: 16px;
+}
+
+.case-bottom {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    margin-bottom: 70px;
+}
+
+.case-b {
+    width: 272px;
+    height: 214px;
+    background-color: #fff;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.case-b:nth-child(4n) {
+    margin-right: 0;
+}
+
+.case-b img {
+    width: 258px;
+    height: 165px;
+    margin-top: 9px;
+    margin-bottom: 14px;
+}
+
+.case-b p {
+    color: #444444;
+    font-size: 12px;
+}
+
+/* 案例区域结束 */
+
+
+/* 广告二区开始 */
+.big-banner2 {
+    width: 100%;
+    height: 427px;
+    background: url(image/brand-bg.jpg) no-repeat;
+    background-position: cover;
+}
+
+.banner2 {
+    width: 1181px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner2 h5 {
+    width: 605px;
+    color: #fefefe;
+    font-size: 28px;
+    line-height: 89px;
+    margin: 156px 291px 0;
+}
+
+/* 广告二区结束 */
+
+
+/* 优势区域开始 */
+.big-advantage {
+    width: 100%;
+    background-color: #fff;
+}
+
+.advantage {
+    width: 1181px;
+    margin: 0 auto;
+}
+
+.advantage-top {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 84px;
+}
+
+.advantage-top h3 {
+    color: #000;
+    font-size: 34px;
+    margin-top: 77px;
+    margin-bottom: 16px;
+}
+
+.advantage-top p {
+    color: #999999;
+    font-size: 16px;
+}
+
+.advantage-bottom {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding-bottom: 155px;
+}
+
+.advantage-b {
+    width: 25%;
+}
+
+.advantage-b h6 {
+    color: #f13a3a;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 58px;
+    margin-bottom: 22px;
+}
+
+.advantage-b p {
+    color: #999999;
+    font-size: 16px;
+}
+
+/* 优势区域结束 */
+
+/* 价值区域开始 */
+.big-value {
+    width: 100%;
+    height: 536px;
+    background: url(image/about-bg.jpg) no-repeat;
+    background-position: 100% 100%;
+}
+
+.value {
+    width: 1181px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.value1 {
+    width: 497px;
+    height: 536px;
+    padding-top: 147px;
+}
+
+.value1 h1 {
+    color: #4b4b4b;
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.value1 ul {
+    margin-bottom: 91px;
+}
+
+.value1 ul li {
+    color: #b5b6b8;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.value-more {
+    width: 156px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #857f7f;
+    line-height: 50px;
+    text-align: center;
+}
+
+.value-more:hover {
+    background-color: #f13a3a;
+    cursor: pointer;
+}
+
+/* 价值区域结束 */
+
+/* 联系区域开始 */
+.big-connect {
+    width: 100%;
+    background-color: #fff;
+}
+
+.connect {
+    width: 1181px;
+    margin: 0 auto;
+    padding: 85px 12px 0;
+}
+
+.connect-top {
+    width: 100%;
+    text-align: center;
+}
+
+.connect-top h1 {
+    color: #000;
+    font-size: 34px;
+    margin-bottom: 42px;
+}
+
+.connect-top+p {
+    color: #686868;
+    font-size: 12px;
+    margin-bottom: 19px;
+}
+
+.t1 {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.connect-center {
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    margin-bottom: 68px;
+}
+
+.cc-1 {
+    width: 350px;
+    height: 90px;
+    margin-right: 52px;
+    display: flex;
+    border: 1px solid #666666;
+}
+
+.cc-1:nth-child(3) {
+    margin-right: 0;
+}
+
+.center-tu {
+    width: 118px;
+    height: 100%;
+    line-height: 90px;
+    text-align: center;
+}
+
+.center-tu img {
+    width: 31px;
+    height: 31px;
+    vertical-align: middle;
+}
+
+.word1 {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 26px 0 13px;
+}
+
+.word2 {
+    color: #666666;
+    font-size: 12px;
+}
+
+.connect-bottom {
+    width: 100%;
+    text-align: center;
+    color: #666666;
+    padding-bottom: 78px;
+}
+
+.connect-bottom img {
+    width: 148px;
+    height: 148px;
+
+}
+
+.wei {
+    position: relative;
+    width: 148px;
+    height: 148px;
+    margin: 0 auto;
+}
+
+.wei::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-100%, 0%);
+    width: 101px;
+    height: 90px;
+    border: 3px solid #000;
+    border-right: 0;
+}
+
+.wei::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(100%, 0%);
+    width: 101px;
+    height: 90px;
+    border: 3px solid #000;
+    border-left: 0;
+}
+
+/* 联系区域结束 */
+
+/* 图片区域开始 */
+.big-picture {
+    width: 100%;
+}
+
+.picture {
+    width: 1181px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 130px;
+    padding-top: 100px;
+}
+
+.picture1 {
+    width: 275px;
+    height: 286px;
+    background-color: #fff;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.picture1:nth-child(4) {
+    margin-right: 0;
+}
+
+.picture1 img {
+    width: 100%;
+    height: 176px;
+    margin-bottom: 27px;
+
+}
+
+.picture1 h6 {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 19px;
+}
+
+.picture1 p {
+    color: #777777;
+}
+
+/* 图片区域结束 */
+
+
+/* 尾部区域开始 */
+.big-bottom {
+    width: 100%;
+    background-color: #1b252e;
+    border-top: 2px solid #f13a3a;
+}
+
+.bottom {
+    width: 1181px;
+    margin: 0 auto;
+}
+
+.bottom-top {
+    width: 100%;
+    height: 140px;
+    border-bottom: 1px solid #686868;
+
+}
+
+.b-t1 {
+    width: 275px;
+    height: 140px;
+    float: left;
+    color: #8a929c;
+    overflow: hidden;
+    text-align: center;
+}
+
+.b-t1 img {
+    margin-right: 10px;
+    vertical-align: bottom;
+    margin-top: 71px;
+}
+
+.bottom-b {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    color: #8b939d;
+    padding-top: 28px;
+    line-height: 25px;
+}
+
+.bottom-b ul{
+    display: flex;
+    margin-left: 324px;
+    
+}
+.bottom-b ul li{
+    padding: 0 11px;
+}
+.bottom-b ul li a{
+    color: #8b939d;
+}
+
+/* 尾部区域结束 */

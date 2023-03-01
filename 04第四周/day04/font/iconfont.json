@@ -1,0 +1,44 @@
+{
+  "id": "3911829",
+  "name": "字体图标学习01",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "599933",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "3544037",
+      "name": "裙子",
+      "font_class": "qunzi",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "7838632",
+      "name": "裙子",
+      "font_class": "qunzi1",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "8765704",
+      "name": "裙子",
+      "font_class": "qunzi2",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "13084099",
+      "name": "裙子",
+      "font_class": "qunzi3",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    }
+  ]
+}

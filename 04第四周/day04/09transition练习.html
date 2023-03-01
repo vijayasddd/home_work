@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .boss{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 200px;
+            overflow: hidden;
+        }
+        .i1{
+            width: 200px;
+            height: 200px; 
+        }
+        .ssbox{
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 0, 0, .4);
+            border-radius: 30px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: .5s linear;
+        }
+        .boss:hover .ssbox{
+            opacity: 1;
+        }
+        .box{
+            width: 200px;
+            height: 50px;
+            /* color: aliceblue; */
+            position: absolute;
+            left: 0;
+            top: -50px;
+            text-align: center;
+            transition: .5s linear;
+        }
+        
+        .i2{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-100%,-50%);
+            /* translate相对于自己原来的位置移动 */
+            transition: .5s linear;
+        }
+        .i3{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(100%,-50%);
+            transition: .5s linear;
+        }
+        .boss:hover .i2{
+            left: 60px;
+        }
+        .boss:hover .i3{
+            right: 60px;
+        }
+        .boss:hover .box{
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boss">
+        <img class="i1" src="image/求职_03.jpg" alt="">
+        <div class="ssbox"></div>
+        <img class="i2" src="image/求职_06.jpg" alt="">
+        <img class="i3" src="image/求职_08.jpg" alt="">
+        <div class="box"><h2>好找工作</h2></div>
+    </div>
+</body>
+</html>

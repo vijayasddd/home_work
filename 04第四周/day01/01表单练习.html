@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            float: right;
+            margin-bottom: 16px;
+        }
+
+        .clear {
+            clear: both;
+            /* margin-bottom: 20px; */
+        }
+
+        .boss {
+            width: 400px;
+            height: 510px;
+            border: 1px solid #555;
+            padding: 20px;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        .a1 p,
+        .a2 p {
+            color: black;
+            font-size: 14px;
+            font-weight: 700;
+            width: 60px;
+            height: 14px;
+            background-color: #fff;
+        }
+
+        .a1 {
+            border-top: 1px solid #a19e9e;
+            width: 358px;
+            height: 180px;
+            position: relative;
+            padding-top: 14px;
+        }
+
+        .row {
+            margin-bottom: 14px;
+        }
+
+        .p1 {
+            position: absolute;
+            left: 7px;
+            top: -10px;
+        }
+
+        .a1-bottom {
+            width: 358px;
+            height: 152px;
+            padding-left: 2em;
+        }
+
+        .cmp {
+            height: 29px;
+
+
+        }
+
+        .tebie {
+            width: 153px;
+            outline: none;
+        }
+
+        .a2-bottom {
+            width: 358px;
+            height: 226px;
+        }
+
+        .a2 {
+            width: 358px;
+            height: 300px;
+            position: relative;
+            border-top: 1px solid #a19e9e;
+           padding-top: 20px;
+        }
+        .p2{
+            position: absolute;
+            left: 7px;
+            top: -10px;
+        }
+        .a2 .a2-buttom label{
+            display: block;
+            padding: 5px 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boss">
+        <p class="header">*号为必填项</p>
+        <p class="clear"></p>
+        <div class="a1">
+            <p class="p1">个人信息</p>
+            <div class="a1-bottom">
+                <div class="row">
+                    <label for="">姓名*</label>
+                    <input type="text" class="cmp tebie">
+                </div>
+                <div class="row">
+                    <label for="">地址*</label>
+                    <input type="text" class="cmp tebie">
+                </div>
+                <div class="row">
+                    <label for="">出生*</label>
+                    <select id="" class="cmp">
+                        <option value="a1">1</option>
+                        <option value="a1">2</option>
+                        <option value="a1">3</option>
+                        <option value="a1">4</option>
+                        <option value="a1">5</option>
+                    </select>
+                    <select id="" class="cmp">
+                        <option value="a1">Jan</option>
+                        <option value="a1">Feb</option>
+                        <option value="a1">Mar</option>
+                        <option value="a1">Apr</option>
+                        <option value="a1">May</option>
+                    </select>
+                    <select id="" class="cmp">
+                        <option value="a1">1979</option>
+                        <option value="a1">1980</option>
+                        <option value="a1">1981</option>
+                        <option value="a1">1982</option>
+                        <option value="a1">1983</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="">性别*</label>
+                    <select id="">
+                        <option value="nv">女</option>
+                        <option value="nan">男</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="a2">
+            <p class="p2">其他信息</p>
+            <div class="a2-buttom">
+                <div class="row">
+                    <label for="">你喜欢这个表单吗？*</label>
+                    <input type="radio" name="love">喜欢
+                    <input type="radio" name="love">不喜欢
+                </div>
+                <div class="row">
+                    <label for="">你喜欢什么运动吗？*</label>
+                    <input type="checkbox" name="lo">足球
+                    <input type="checkbox" name="lo">篮球
+                    <input type="checkbox" name="lo">排球
+                </div>
+                <div class="row">
+                    <label for="">请写下你的建议？*</label>
+                    <textarea name="" id="" cols="30" rows="10" resize:none></textarea>
+                </div>
+            </div>
+            <button>提交个人信息</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .boss{
+            width: 100%;
+            /* 宽度100%是和视口一样的宽度，是没有横向滚动条的 */
+            height: 300px;
+            background-color: pink;
+            padding: 0 20px;
+            box-sizing: border-box;
+            /* 现在的宽度是100%+40px,下方会有横向滚动条，目前没有办法用100%-40px,所以可以设置成border-box */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boss">我是盒子里面的内容我是盒子里面的内容</div>
+</body>
+</html>

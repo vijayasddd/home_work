@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            overflow: hidden;
+            margin: 100px;
+            border-bottom: 10px solid orange;
+            padding-left: 20px;
+        }
+        .nav li{
+            list-style: none;
+            width: 100px;
+            height: 30px;
+            background-color: pink;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: #000;
+            display: block;
+            width: 100px;
+            height: 30px;
+        }
+        .nav .ch{
+            display: none;
+        }
+        .nav a:hover{
+            background-color: orange;
+            color:#dc1b1b;
+        }
+        .nav a:hover .en{
+            display: none;
+        }
+        .nav a:hover .ch{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li>
+            <a target="_blank" href="https://www.baidu.com">
+                <span class="en">home</span>
+                <span class="ch">首页</span>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.baidu.com">
+                <span class="en">name</span>
+                <span class="ch">姓名</span>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.baidu.com">
+                <span class="en">family</span>
+                <span class="ch">家庭</span>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.baidu.com">
+                <span class="en">love</span>
+                <span class="ch">爱情</span>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.baidu.com">
+                <span class="en">world</span>
+                <span class="ch">世界</span>
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>

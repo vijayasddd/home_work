@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .c-desc{
+      position: relative;
+      width: 20px;
+      height: 20px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    .c-desc:before{
+      position: absolute;
+      top: 50%;
+      content: "";
+      transform: translate(-100%,-50%);
+      left: 0;
+      width: 300px;
+      border-bottom:1px solid;
+    }
+    .c-desc:after{
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translate(100%,-50%);
+      right: 0;
+      width: 300px;
+      border-bottom:1px solid;
+    }
+    .c-desc__circle{
+      height: 100%;
+      border-radius: 50%;
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+<div class="c-desc">
+  <div class="c-desc__circle"></div>
+</div>
+</body>
+</html>

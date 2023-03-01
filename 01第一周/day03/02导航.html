@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .daohang{
+            width: 953px;
+            height: 80px;
+            background-color: aqua;
+        }
+        .daohang1{
+            width: 953px;
+            height: 80px; 
+        }
+        .daohang1 li{
+            /* 这里是包含选择器，也叫后代选择器 */
+            width: 110px;
+            height: 80px;
+            background-color: black;
+            text-align: center;
+            line-height: 80px;
+            font-size: 14px;
+            float: left;
+        }
+        .daohang .li1{
+            /* 群组选择器，类选择器权重为10 ，这里两个类选择器，就是10+10等于20*/
+            width:73px;
+            height:80px;
+            background-color: darkorange;
+        }
+        .daohang li a{
+            color: white;
+        }
+            
+       
+    </style>
+</head>
+<body>
+    <div class="daohang">
+        <ul class="daohang1">
+            <li class="li1"><a href="#">首页</a></li>
+            <!-- li1的width为73px -->
+            <li><a href="#">产品介绍</a></li>
+            <!-- 其他的Li的width为110px -->
+            <li><a href="#">产品介绍</a></li>
+            <li><a href="#">产品介绍</a></li>
+            <li><a href="#">产品介绍</a></li>
+            <li><a href="#">产品介绍</a></li>
+            <li><a href="#">产品介绍</a></li>
+            <li><a href="#">产品介绍</a></li>
+            <li><a href="#">产品介绍</a></li>
+        </ul>
+    </div>
+</body>
+</html>

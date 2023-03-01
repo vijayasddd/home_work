@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li a{
+            text-decoration: none;
+            color: #000;
+            line-height: 30px;
+        }
+        .a1:hover{
+            text-decoration: underline;
+        }
+        .a2:hover{
+           color: red;
+        }
+        .a3:hover{
+            text-decoration:line-through;
+        }
+        .a4:hover{
+            font-size: 20px;
+        }
+        .a5:hover{
+            text-decoration:overline;
+        }
+        li{
+            list-style: none;
+        }
+        .a1:active{
+            color: aqua;
+        }
+
+        /* 
+        伪类选择器
+        ：hover  鼠标划过
+        a：link  超链接默认的状态
+        a:visited  超链接访问过后
+        a:active   鼠标按住不动
+        */
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="a1" href="#">这是一行文本</a></li>
+        <li><a class="a2" href="#">这是一行文本</a></li>
+        <li><a class="a3" href="#">这是一行文本</a></li>
+        <li><a class="a4"href="#">这是一行文本</a></li>
+        <li><a class="a5"href="#">这是一行文本</a></li>
+    </ul>
+</body>
+</html>

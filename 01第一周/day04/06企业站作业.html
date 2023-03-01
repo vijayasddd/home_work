@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        a{
+            text-decoration: none;
+            color: #0b0b0b;
+        }
+        /* li{list-style: none;} */
+        /* 顶部区域 */
+        .qyz-ding{
+            width: 100%;
+            height: 100px;
+        }
+        .ding{
+            width: 1002px;
+            height: 100px;
+            background-color: rgb(245, 247, 247);
+            margin: 0 auto;
+        }
+        .ding1{
+            width: 475px;
+            height: 100px;
+            background-color: #ffffff;
+            margin-left: 17px;
+            float: left;
+        }
+        .pleft{
+            font-size: 35px;
+            color: #afafb9;
+            float: left;
+            line-height: 100px;
+        }
+        .pright{
+            font-size: 36px;
+            color: #2a2a2a;
+            float: left;
+            line-height: 100px;
+        }
+        .ding2{
+            width: 508px;
+            height: 100px;
+            background-color: #ffffff;
+            /* float: right; */
+            overflow: hidden;
+            /* position: relative; */
+        }
+        .suosou{
+            width: 213px;
+            height: 27px;
+            background-color: #f4f1f1;
+            padding-left:13px;
+            position: relative;
+            left: 250px;
+            top: 40px;
+        }
+        .suosou input{
+           border: 0;
+           outline: none;
+           width: 173px;
+           height: 27px;
+           vertical-align: top;
+           background-color: #f4f1f1;
+        }
+        .suosou button{
+            border: 0;
+            width: 34px;
+            height: 27px;
+           cursor: pointer;
+           background:url(images/企业站1-small_03.jpg) no-repeat center;
+        }
+
+
+        .kuan1,.kuan2{
+            float: right;
+            margin-top: 44px;
+        }
+        .kuan2{
+            margin-right: 35px;
+        }
+        /* 导航 */
+       
+        .qyz-nav{
+            height:59px;
+            background-color: #323232;
+        }
+        .nav{
+            width: 1002px;
+            height: 59px;
+            background-color: #a09a9a;
+            margin: 0 auto;
+        }
+        .li1{
+            width: 140px;
+            height: 59px;
+            background-color: #323232;
+            float: left;
+        }
+        .li2,.li3,.li4,.li5,.li6,.li7,.li8{
+            width: 122px;
+            height: 59px;
+            background-color: #323232;
+            float: left;
+        }
+        .li1,.li2,.li3,.li4,.li5,.li6,.li7,.li8{
+            margin-right: 1px;
+        }
+        .nav ul li{
+            text-align: center;
+            line-height: 59px;
+            color: #ffffff;
+            list-style: none;
+        }
+        .daohang ul li a{
+            font-weight: 300;
+        }
+        /* 广告区 */
+        .qye-ad{
+            width: 100%;
+            height: 465px;
+        }
+        .ad{
+            width: 100%;
+            height: 465px;
+            background-color: #a09a9a;
+            margin: 0 auto;
+        }
+        .ad img{
+            width: 100%;
+            height:100%;
+        }
+        /* 新闻区 */
+        .qye-new{
+            width: 100%;
+            height: 242px;
+        }
+        .new{
+            width: 1002px;
+            height: 242px;
+            background-color: #ffffff;
+            margin: 0 auto;
+        }
+        .new1{
+            width: 483px;
+            height:242px;
+            background-color: #ffffff;
+            float: left;
+            margin-left: 20px;
+            overflow: hidden;
+        }
+        .xinwen li{
+            background: url(images/disc.jpg) no-repeat left center;
+            padding-left: 10px;
+        }
+       
+        h3{
+            color: #5c5c5c;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .wenzi{
+            margin-top: 33px;
+        }
+        .neirong{
+            font-size: 13px;
+            color: #5c5c5c;
+            margin-top: 24px;
+            float: left;
+        }
+        .new1 li a{
+            display: block;
+            width: 310px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color:#5c5c5c;
+        }
+        .riqi{
+            font-size: 13px;
+            color: #5c5c5c;
+            float: right;
+            margin-top: 24px;
+            margin-right: 21px;
+        }
+        .new2{
+            width: 239px;
+            height: 242px;
+            background-color: #f1f1f1;
+            float: left;
+            overflow: hidden;
+        }
+        .jieshao{
+            margin-top: 33px;
+            margin-left: 15px;
+        }
+        .time,.time1{
+            font-size: 13px;
+            color: #5c5c5c;
+            margin-top: 24px;
+            margin-left: 15px;
+        }
+        .new3{
+            width: 244px;
+            height: 242px;
+            background-color: #fbfbfb;
+            float: left;
+            overflow: hidden;
+        }
+        .rencai{
+            margin-top: 33px;
+            margin-left: 15px;
+        }
+        .wenben{
+            font-size: 13px;
+            color: #5c5c5c;
+            margin-top: 24px;
+            margin-left: 15px;
+        }
+        .ma{
+            margin-left: 40px;
+        }
+        /* 小标题：市场项目 */
+        .qye-title{
+            width: 100%;
+            height: 67px;
+
+        }
+        .title{
+            width: 1002px;
+            height: 67px;
+            background-color: #ffffff;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .xiangmu{
+            margin-top: 23px;
+            margin-left: 15px;
+        }
+        /* 图片区 */
+        .qye-img{
+            width: 100%;
+            height: 240px;
+        }
+        .img{
+            width: 1002px;
+            height:240px ;
+            background-color: #ffffff;
+            margin: 0 auto;
+        }
+        .img1,.img2,.img3,.img4{
+            width: 212px;
+            height: 240px;
+            float: left;
+            background-color: #ffffff;
+           
+        }
+        .img1{
+            margin-left: 20px;
+        }
+        
+        .img1,.img2,.img3{
+            margin-right: 37px;
+        }
+       .w1,.w2,.w3,.w4{
+        font-size: 13px;
+            color: #5c5c5c;
+            margin-top: 10px;
+            margin-left: 12px;
+
+       }
+        /* 产品中心 */
+        .qyz-product{
+            width: 100%;
+            height: 251px;
+            background-color: #e5e5e5;
+
+        }
+        .product{
+            width: 1002px;
+            height: 251px;
+            background-color: #e5e5e5;
+            margin: 0 auto;
+        }
+        .p1{
+            width: 503px;
+            height: 251px;
+            background-color: #e5e5e5;
+            float: left;
+            margin-left: 17px;
+            overflow: hidden;
+        }
+        .pro{
+            margin-top: 30px;
+            margin-left: 12px;
+        }
+        .xian1{
+            width: 452px;
+            height: 193px;
+            border-top: 1px solid #7c7a7a;
+        }
+        .product ul li a{
+            font-size: 13px;
+            color: #5c5c5c;
+            background: url(images/企业站1-small_01.jpg) no-repeat left center;
+            padding-left: 10px;
+        }
+        /* .product ul li{
+            width: 90px;
+            height: 18px;
+            padding-left: 5px;
+        } */
+      
+        .ul1{
+            margin-top: 15px;
+            margin-left: 12px;
+            width: 90px;
+            height: 193px;
+            float: left;
+        }
+       
+        .ul2{
+            margin-top: 15px;
+            margin-left: 44px;
+            width: 120px;
+            height: 193px;
+            float: left;
+        }
+        .ul3{
+            width: 160px;
+            height: 193px;
+            margin-top: 15px;
+            margin-left: 20px;
+            float: left;
+        }
+       
+        .p2{
+            width: 204px;
+            height: 251px;
+            background-color: #e5e5e5;
+            float: left;
+        }
+        .pro1{
+            margin-top: 30px;
+            margin-left: 12px;
+        }
+        .xian2{
+            width: 148px;
+            height: 193px;
+            border-top: 1px solid #7c7a7a;
+        }
+        .ul4{
+            width: 140px;
+            height: 193px;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+       
+        .p3{
+            width: 278px;
+            height: 251px;
+            background-color: #e5e5e5;
+            float: left;
+            overflow: hidden;
+        }
+        .pro2{
+            margin-top: 30px;
+            margin-left: 12px;
+        }
+        .ditu{
+            margin-top: 15px;
+        }
+        .xian3{
+            width: 255px;
+            height: 193px;
+            border-top: 1px solid #7c7a7a;
+        }
+        .product ul li{
+            list-style: none;
+        }
+        /* 底部区域 */
+        .qye-foot{
+            width: 100%;
+            height: 83px;
+        }
+        .foot{
+            width: 1002px;
+            height: 83px;
+            background-color: #ffffff;
+            margin: 0 auto;
+        }
+        .foot a{
+            font-size: 12px;
+            color: #7e7e7e;
+            padding-left: 7px;
+            padding-right: 7px;
+            border-right: 1px solid #978f8f;
+        }
+        .foot p{
+            margin-top: 24px;
+            font-size: 12px;
+            color: #7e7e7e;
+            float: left;
+        }
+        .foot .a4{
+            border: 0;
+        }
+        .foot .p2{
+            margin-left: 35px;
+            width: 600px;
+            height: 83px;
+            background-color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 顶部区域 -->
+    <div class="qyz-ding">
+    <div class="ding">
+        <div class="ding1">
+            <p class="pleft">TREVISO</p>
+            <P class="pright">theme</P>
+        </div>
+        <div class="ding2">
+            <div class="suosou">
+            <input type="text" placeholder="请输出内容……">
+            <button></button>
+        </div>
+            
+        </div>
+    </div>
+</div>
+    <!-- 导航 -->
+    <div class="qyz-nav">
+    <div class="nav">
+       <ul class="daohang">
+        <li class="li1"><h4>集团介绍</h4>
+        </li>
+        <li class="li2"><h4>人力关系</h4></li>
+        <li class="li3"><h4>产品中心</h4></li>
+        <li class="li4"><h4>市场市场</h4></li>
+        <li class="li5"><h4>产品研发</h4></li>
+        <li class="li6"><h4>国际合作</h4></li>
+        <li class="li7"><h4>投资者介绍</h4></li>
+        <li class="li8"><h4>新闻资讯</h4></li>
+       </ul>
+    </div>
+</div>
+    <!-- 广告区 -->
+    <div class="qyz-ad">
+    <div class="ad">
+        <img src="images/企业站1_02.jpg" alt="">
+    </div>
+</div>
+    <!-- 新闻区 -->
+    <div class="qyz-new">
+    <div class="new">
+        <div class="new1">
+            <div class="wenzi">
+                <div><h3>公司新闻</h3></div>
+                <div class="neirong">
+                    <ul class="xinwen">
+                        <li><a href="#">王总去夜总会探视下属</a></li>
+                        <li><a href="#">隔壁的小猪仔生了一个大猪仔</a></li>
+                        <li><a href="#">出车祸容易失忆的原因是什么？专家指出…你好你好你好好你好你好你好好你好你好你好好</a></li>
+                        <li><a href="#">如果一个人爱上了一只猪，回发生什么？你好你好你好好</a></li>
+                        <li><a href="#">狂暴的大雨，冲刷着这个世界你好你好你好好你好你好你好好你好你好你好好</a></li>
+                        <li><a href="#">阿里巴巴和四十大盗你好你好你好好你好你好你好好你好你好你好好</a></li>
+                    </ul>
+                </div>
+                <div class="riqi">
+                    <p>2023-01-02</p>
+                    <p>2023-01-02</p>
+                    <p>2023-01-02</p>
+                    <p>2023-01-02</p>
+                    <p>2023-01-02</p>
+                    <p>2023-01-02</p>
+                </div>
+                
+           
+            </div>
+            
+        </div>
+        <div class="new2">
+            <div class="jieshao">
+                <h3>公司介绍</h3>
+            </div>
+            <div class="time">
+                <p>公司成立于2023年，<br>
+                    已经是一家百年老店了</p>
+            </div>
+            <div class="time1">已经是一家享誉全球的，集合了<br>技术，人才和金钱的超级大集团</div>
+        </div>
+        <div class="new3">
+            <div class="rencai">
+                <h3>人才招聘</h3>
+            </div>
+            <div class="wenben">
+                 <p>用二流的思想，培养一流的人才，<br>用心铸造奇迹，也许不是梦想</p>
+            </div>
+            <div class="ma"><img src="/01第一周/day04/images/马.jpg" alt=""></div>
+        </div>
+    </div>
+</div>
+    <!-- 小标题：市场项目 -->
+    <div class="qyz-title">
+    <div class="title">
+        <h3 class="xiangmu">市场项目</h3>
+    </div>
+</div>
+    <!-- 图片区 -->
+    <div class="qyz-img">
+    <div class="img">
+        <div class="img1">
+            <div class="m1"><img src="/01第一周/day04/images/i.jpgp.jpge.jpgg_09.jpg" alt=""></div>
+            <div class="w1">
+                <p>交通轨道：从我家后门的一个圈里，念一句口诀就可以上火星……</p>
+            </div>
+        </div>
+        <div class="img2">
+            <div class="m2"><img src="/01第一周/day04/images/i.jpgp.jpge.jpgg_11.jpg" alt=""></div>
+            <div class="w2">
+                <p>节能环保：每天光盘，吃饱了就是节能，也许不是吧…… </p>
+            </div>
+        </div>
+        <div class="img3">
+            <div class="m3"><img src="/01第一周/day04/images/i.jpgp.jpge.jpgg_13.jpg" alt=""></div>
+            <div class="w3">
+                <p>石油：石油是一种很珍贵的资源，一般有钱就可以浪费，没钱就算了</p>
+            </div>
+        </div>
+        <div class="img4">
+            <div class="m4"><img src="/01第一周/day04/images/i.jpgp.jpge.jpgg_15.jpg" alt=""></div>
+            <div class="w4">
+                <p>这是什么：考一考你，你知道这是什么，猜中了算你厉害</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- 产品中心 -->
+    <div class="qyz-product">
+    <div class="product">
+        <div class="p1">
+            <div class="pro"><h3>产品中心</h3>
+            </div>
+            <div class="xian1">
+                <div class="ul1">
+                    <ul>
+                        <li><a href="#">汽车电机</a></li>
+                        <li><a href="#">日用电机</a></li>
+                        <li><a href="#">特种电机</a></li>
+                        <li><a href="#">大功率电机</a></li>
+                        <li><a href="#">牛气电机</a></li>
+                    </ul>
+                </div>
+                
+                <div class="ul2">
+                    <ul>
+                        <li><a href="#">工业驱动和自动化</a></li>
+                        <li><a href="#">高压变频</a></li>
+                        <li><a href="#">混泥土搅拌</a></li>
+                        <li><a href="#">电动车电瓶</a></li>
+                    </ul>    
+                </div>
+
+                <div class="ul3">
+                    <ul>
+                        <li><a href="#">电池电源</a></li>
+                        <li><a href="#">高压变频输电</a></li>
+                        <li><a href="#">楼盘信息</a></li>
+                        <li><a href="#">金融产品</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="p2">
+            <div class="pro1"><h3>技术研发</h3></div>
+            <div class="xian2">
+                <div class="ul4">
+                    <ul>
+                        <li><a href="#">科技力量</a></li>
+                        <li><a href="#">先进设备</a></li>
+                        <li><a href="#">研发创新</a></li>
+                        <li><a href="#">工艺流程</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="p3">
+            <div class="pro2"><h3>营销网络</h3></div>
+            <div class="xian3">
+                <img class="ditu" src="/01第一周/day04/images/地图.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- 底部区域 -->
+    <div class="qyz-foot">
+    <div class="foot">
+        <p>
+            <a href="#">网站地图</a>
+            <a href="#">练习我们</a>
+            <a href="#">关注我们</a>
+            <a class="a4" href="#">系统采购入口</a>
+        </p>
+        <p class="p2">udsjbdjuhsdb 博彩互动你进大家你看是的呢江边城外 版权所哟 技术支持： 版权所有</p>
+    </div>
+</div>
+</body>
+</html>

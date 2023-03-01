@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(88, 138, 138);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 
+        -块级元素 ： 块元素就是所谓的大标签，特点是独占一行，宽为100%   <div></div>   <p></p>  <h1></h1>  <li></li>
+        -行内元素（内联元素）：默认挨着排列 且有默认间隙，不能设置宽高，margin和padding都只能设置左右，不能设置上下。比如：<b> <i> <span> <a>
+        -行内块元素：兼具块元素和行内元素的特点：一行排列，可以设置宽高，margin和padding可以设置四个方向，元素之间有默认间距，图片还会被撑开3Px大小，所以行内块元素还有一个私有属性，就是  vertical-align:top/middle/bottom 
+              +可以用来解决图片向下撑开的3px大小的bug
+              +可以配合其他属性一起实现行内块级元素实现垂直居中效果
+            
+        如何实现行内块元素实现水平居中？
+        1.给上层盒子添加text-align：center；先实现水平居中。再添加line-height：300px;
+        2.给本身添加vertical-align:middle;实现水平垂直居中。
+
+        解决图片向下撑开的3px大小的bug
+        一、给图片（行内块元素）本身添加vertical-align:left/middle/bottom;这三个属性值都是可以的
+        二、给图片（行内块元素）本身添加display：block；转为块元素；
+        三、给图片（行内块元素）或者父元素添加浮动，但是要注意浮动的副作用；
+        四、给图片（行内块元素）的父元素或者body添加font-size：0；
+
+
+        +浮动的副作用清除：
+             +1、给父元素添加height
+             +2、给父元素添加overflow：hidden；（超出部分隐藏）动态获取子元素高度
+    
+    -->
+    <div class="box">
+        <img src="../image/liuyifei.jpeg" alt="">
+    </div>
+
+</body>
+</html>

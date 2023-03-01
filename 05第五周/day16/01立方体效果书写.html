@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .boss{
+            width: 200px;
+            height: 200px;
+            /* border: 1px solid #555; */
+            position: relative;
+            transform-style: preserve-3d;
+            margin: 200px auto;
+            position: relative;
+            transition: 3s linear;
+        }
+        .boss:hover{
+            transform:rotate3d(1,1,1,360deg)
+        }
+        .boss div{
+            width: 200px;
+            height: 200px;
+            color: aliceblue;
+            font-size: 40px;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: .4;
+            /* backface-visibility: hidden; */
+        }
+        .boss div:nth-child(1){
+            background-color: aqua;
+            transform: translateX(-100px) rotateY(90deg);   
+        }
+         .boss div:nth-child(2){
+                background-color: rgb(74, 92, 92);
+                transform: translateX(100px) rotateY(-90deg)  
+            }
+            .boss div:nth-child(3){
+                background-color: rgb(88, 67, 90);
+                transform: translateY(100px) rotateX(-90deg);   
+            }
+            .boss div:nth-child(4){
+                background-color: rgb(85, 181, 118);
+                transform: translateY(-100px) rotateX(90deg);   
+            }
+        .boss div:nth-child(5){
+            background-color: rgb(203, 44, 217);
+            transform: translateZ(-100px) rotateY(180deg);   
+        }
+        .boss div:nth-child(6){
+            background-color: rgb(85, 187, 135);
+            transform: translateZ(100px);   
+        }
+    </style>
+</head>
+<body>
+    <div class="boss">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>

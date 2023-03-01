@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .toubu{
+            width: 651px;
+            height: 254px;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        .toubu1{
+            width: 651px;
+            height: 198px;
+            background-color: #bfbfbf;
+            margin-top: 29px;
+        }
+        /* 广告区 */
+        .ad{
+            width: 651px;
+            height: 115px;
+            background-color: #ffffff;
+        }
+        .ad1,.ad2,.ad3,.ad4{
+            width: 100px;
+            height: 63px;
+            background-color: #dcdcdc;
+            float: left;
+        }
+        .ad1{
+            margin-left: 121px;
+        }
+        .ad4{
+            margin-right: 121px;
+        }
+        .ad1,.ad2,.ad3{
+            margin-right: 3px;
+        }
+        /* 间隔1 */
+        .jg{
+            width: 651px;
+            height: 51px;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        .jg1{
+            width: 60px;
+            height: 11px;
+            background-color: #dcdcdc;
+            margin: 0 auto;
+        }
+        .jg2{
+            width: 173px;
+            height: 6px;
+            background-color: #c7c7c7;
+            margin: 15px auto 6px;
+
+
+        }
+        .jg3{
+            width: 210px;
+            height: 6px;
+            background-color: #c7c7c7;
+            margin: 0 auto;
+        }
+        /* 正文区域 */
+        .msg{
+            width: 651px;
+            height: 202px;
+            background-color: #ffffff;
+        }
+        .msg1,.msg2,.msg3{
+            width: 128px;
+            height: 138px;
+            background-color: #c7c7c7;
+            float: left;
+        }
+        .msg1{
+            margin-left: 121px;
+        }
+        .msg1,.msg2{
+            margin-right: 17px;
+        }
+        /* 中间部分 */
+        .zhong{
+            width: 651px;
+            height: 294px;
+            background-color: #dcdcdc;
+            overflow: hidden;
+        }
+        .zhong-top1{
+            width: 60px;
+            height: 11px;
+            background-color: #d5d1d1;
+            margin: 0 auto;
+            margin-top: 44px;
+        }
+        .zhong-top2{
+            width: 173px;
+            height: 6px;
+            background-color: #c7c7c7;
+            margin: 15px auto 6px;
+
+
+        }
+        .zhong-top3{
+            width: 210px;
+            height: 6px;
+            background-color: #c7c7c7;
+            margin: 0 auto 12px;
+
+        }
+        .msgag{
+            width: 651px;
+            height: 200px;
+            background-color: #dcdcdc;
+        }
+        .msg2-1,.msg2-2,.msg2-3{
+            width: 128px;
+            height: 138px;
+            background-color: #c7c7c7;
+            float: left;
+        }
+        .msg2-1{
+            margin-left: 121px;
+        }
+        .msg2-1,.msg2-2{
+            margin-right: 17px;
+        }
+        /* 重要部分 */
+        .zy{
+            width: 651px;
+            height: 294px;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        .zy-top{
+            width: 40px;
+            height: 11px;
+            background-color: #bfbfbf;
+            margin: 55px auto 21px;
+        }
+        .zy-bottom{
+            width: 651px;
+            height: 208px;
+            background-color: #ffffff;
+        }
+        .zy-b1{
+            width: 55px;
+            height: 141px;
+            background-color: #eeeeee;
+            float: left;
+            margin-left: 121px;
+        }
+        .zy-b2{
+            width: 55px;
+            height: 141px;
+            background-color: #dcdcdc;
+            float: left;
+        }
+        .zy-b3{
+            width: 55px;
+            height: 141px;
+            background-color: #bfbfbf;
+            float: left;
+        }
+        .zy-b4{
+            width: 150px;
+            height: 141px;
+            background-color: #a0a0a0;
+            float: left;
+        }
+        .zy-b5{
+            width: 94px;
+            height: 141px;
+            background-color: #7d7d7d;
+            float: left;
+        }
+        /* 地图区 */
+        .map{
+            width: 651px;
+            height: 258px;
+            background-color: #d2d2d2;
+        }
+        .map1{
+            width: 328px;
+            height: 258px;
+            background-color: #d2d2d2;
+            float: left;
+            
+        }
+        .map1-1{
+            width: 84px;
+            height: 89px;
+            background-color: #bfbfbf;
+            margin: 85px 105px 84px 139px;
+        }
+        .map2{
+            width: 323px;
+            height: 258px;
+            background-color: #d2d2d2;
+            float: left;
+            overflow: hidden;
+        }
+        .m2{
+            width: 40px;
+            height: 11px;
+            background-color: #bdbdbd;
+            margin-top: 61px;
+            margin-bottom: 11px;
+        }
+       .m3,.m4,.m5,.m6,.m7,.m8,.m9,.m10{
+            width: 200px;
+            height: 8px;
+            background-color: #7c7c7c;
+            margin-bottom: 11px;
+        }
+        /* 信息区 */
+        .info{
+            width: 651px;
+            height: 327px;
+            background-color: #ffffff;
+        }
+        .info1{
+            width: 651px;
+            height: 105px;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        .info1-1{
+            width: 46px;
+            height: 13px;
+            background-color: #bfbfbf;
+            margin: 71px auto 22px;
+        }
+        .info2{
+            width: 651px;
+            height: 138px;
+            background-color: #ffffff;
+        }
+        .in1,.in2,.in3,.in4{
+            width: 100px;
+            height: 138px;
+            background-color: #d2d2d2;
+            float: left;
+            margin-right: 7px;
+        }
+        .in1{
+            margin-left: 138px;
+            background-color: #7d7d7d;
+        }
+        .info3{
+            width: 651px;
+            height: 86px;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        .info3-3{
+            width: 73px;
+            height: 13px;
+            background-color: #bfbfbf;
+            margin: 15px auto 61px;
+        }
+        /* 脚踝区域 */
+        .jiaohuai{
+            width: 651px;
+            height: 55px;
+            background-color: #ffffff;
+        }
+        .j1{
+         width: 50px;
+         height: 24px;
+         background-color: #a0a0a0;
+         margin-left: 122px;
+         float: left;
+         margin-right: 8px;
+        }
+        .j2,.j3,.j4,.j5,.j6,.j7,.j8,.j9,.j10{
+            width: 28px;
+            height: 24px;
+            background-color: #a8a6a6;
+            float: left;
+            margin-right: 11px;
+        }
+        /* 底部区域 */
+        .foot{
+            width: 651px;
+            height: 78px;
+            background-color: #bdbdbd;
+            overflow: hidden;
+        }
+        .foot1{
+            width: 33px;
+            height: 25px;
+            background-color: #7d7d7d;
+            margin:32px auto;
+        }
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="toubu">
+        <div class="toubu1"></div>
+    </div>
+    <!-- 广告区 -->
+    <div class="ad">
+        <div class="ad1"></div>
+        <div class="ad2"></div>
+        <div class="ad3"></div>
+        <div class="ad4"></div>
+    </div>
+    <!-- 间隔1 -->
+    <div class="jg">
+        <div class="jg1"></div>
+        <div class="jg2"></div>
+        <div class="jg3"></div>
+    </div>
+    <!-- 正文区域 -->
+    <div class="msg">
+        <div class="msg1"></div>
+        <div class="msg2"></div>
+        <div class="msg3"></div>
+    </div>
+    <!-- 中间部分 -->
+    <div class="zhong">
+<div class="zhong-top">
+    <div class="zhong-top1"></div>
+    <div class="zhong-top2"></div>
+    <div class="zhong-top3"></div>
+</div>
+    <div class="msgag">
+        <div class="msg2-1"></div>
+        <div class="msg2-2"></div>
+        <div class="msg2-3"></div>
+    </div>
+</div>
+<!-- 重要部分 -->
+<div class="zy">
+    <div class="zy-top"></div>
+    <div class="zy-bottom">
+        <div class="zy-b1"></div>
+        <div class="zy-b2"></div>
+        <div class="zy-b3"></div>
+        <div class="zy-b4"></div>
+        <div class="zy-b5"></div>
+    </div>
+</div>
+<!-- 地图区 -->
+<div class="map">
+    <div class="map1">
+        <div class="map1-1"></div>
+    </div>
+    <div class="map2">
+        <div class="m2"></div>
+        <div class="m3"></div>
+        <div class="m4"></div>
+        <div class="m5"></div>
+        <div class="m6"></div>
+        <div class="m7"></div>
+        <div class="m8"></div>
+        <div class="m9"></div>
+        <div class="m10"></div>
+    </div>
+</div>
+<!-- 信息区 -->
+<div class="info">
+    <div class="info1">
+        <div class="info1-1"></div>
+    </div>
+    <div class="info2">
+         <div class="in1"></div>
+         <div class="in2"></div>
+         <div class="in3"></div>
+         <div class="in4"></div>
+    </div>
+    <div class="info3">
+        <div class="info3-3"></div>
+    </div>
+</div>
+<!-- 脚脖子区域 -->
+<div class="jiaohuai">
+    <div class="j1"></div>
+    <div class="j2"></div>
+    <div class="j3"></div>
+    <div class="j4"></div>
+    <div class="j5"></div>
+    <div class="j6"></div>
+    <div class="j7"></div>
+    <div class="j8"></div>
+    <div class="j9"></div>
+    <div class="j10"></div>
+</div>
+<!-- 底部 -->
+<div class="foot">
+    <div class="foot1"></div>
+</div>
+
+</body>
+</html>

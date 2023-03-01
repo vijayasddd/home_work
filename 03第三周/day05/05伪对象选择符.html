@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        /* ::after定义在元素后面的内容 */
+        .box1::after{
+           content: ",处处闻啼鸟";
+           color: red;
+           /* 后面的样式都是给content添加的 */
+        }
+
+        /* ::before定义在元素前面加东西 */
+        .box2::before{
+            content: url(image/2f91882ad3f2007992ce7bc62877e27e_bus_tu2.jpg);
+            margin-right: 20px;
+        }
+
+        /* ::first-letter定义元素内第一个字符的样式， 注意：只适用于块元素 */
+         .box3::first-letter{
+            color: blue;
+            font-size: 20px
+         }
+
+         /* ::first-line定义元素内第一行句子的样式，注意：只适用于块元素 */
+        .box4::first-line{
+            color: blue;
+            font-weight: 700;
+        }
+
+        /* ::selection定义元素被选中之后的样式，只能设置背景颜色和字体颜色 */
+       .box5::selection{
+        background-color: aquamarine;
+        color: crimson;
+       }
+       /* 如果需要给页面的所有内容都设置同一种选中之后的样式，可以直接写：：selection */
+
+       ::selection{
+        background-color: black;
+        color: aliceblue;
+       }
+    </style>
+</head>
+<body>
+    <div class="box1">春眠不觉晓</div>
+    <div class="box2">在前面添加图片</div>
+    <div class="box3">这是一句话</div>
+    <div class="box4">你好，生活中的第一件事就是学习，其他都靠边生活中的第一件事就是学习，其他都靠边生活中的第一件事就是学习，其他都靠边生活中的第一件事就是学习，其他都靠边vvvvvv生活中的第一件事就是学习，其他都靠边</div>
+    <div class="box5">你好，生活中的第一件事就是学习，其他都靠边</div>
+    <div class="box6">6</div>
+</body>
+</html>

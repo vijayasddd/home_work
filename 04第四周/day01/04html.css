@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* 导航区域开始 */
+.big-nav {
+    width: 100%;
+    height: 112px;
+    background-color: #fff;
+}
+
+
+.nav {
+    width: 1205px;
+    height: 82px;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    /* padding-bottom: 10px; */
+}
+
+.nav-bottom{
+    width: 100%;
+    height: 30px;
+    border-top: 2px solid #cbc6c6;
+}
+
+.nav-left {
+    width: 671px;
+    height: 82px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.nav-left a {
+    display: block;
+    width: 214px;
+    height: 28px;
+    margin-top: 28px;
+    margin-left: 5px;
+}
+.nav-left img{
+    width: 214px;
+    height: 28px;
+}
+
+.nav-right {
+    width: 534px;
+    height: 82px;
+    background-color: #fff;
+}
+.nav-right ul{
+    width: 534px;
+    height: 82px;
+    text-align: center;
+    line-height: 82px;
+    display: flex;
+}
+.nav-right li{
+    width: 90px;
+    height: 82px;
+    font-size: 16px;
+}
+.nav-right li a{
+    color: #323431;
+    display: block;
+    width: 90px;
+    height: 82px;
+}
+.nav-right li a:hover{
+    background-color: rgb(231, 172, 172);
+}
+.nav-right .li1{
+    width: 63px;
+}
+.nav-right .li1 a{
+    color: #f8716e;
+    width: 63px;
+}
+/* 导航区域结束 */
+
+
+/* 广告区域开始 */
+.big-banner{
+    width: 100%;
+    height: 502px;
+    background-color: rgb(207, 161, 207);
+}
+.banner{
+    width: 100%;
+    height: 502px;
+    background-color: #f8716e;
+    margin:0 auto;
+    position: relative;
+}
+.content{
+    height: 502px; 
+    width: 100%;
+    overflow: hidden;
+}
+.dingwei a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+}
+.banner img{
+    height: 502px; 
+    width: 100%;
+}
+.dingwei{
+    width: 50px;
+    height: 20px;
+    background-color: transparents;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.dingwei>div{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+.dingwei .dingbox1{
+    background-color: red;
+}
+/* 广告区域结束 */
+
+
+/* 项目区域开始 */
+.big-pro{
+    width: 100%;
+    height: 420px;
+    background-color: #fff;
+}
+.pro{
+    width: 1205px;
+    height: 420px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.pro-top{
+    width: 1205px;
+    height: 75px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.pro-top h2,.img-top h2,.show-top h2{
+    font-size: 28px;
+    color: #000;
+    margin-top: 28px;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 8px;
+    background: url(/04第四周/day01/首页图片/首页_05.jpg) no-repeat center bottom;
+}
+.anli-top h2{
+    font-size: 28px;
+    color: #000;
+    margin-top: 28px;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 8px;
+    background: url(/04第四周/day01/首页图片/首页_03.jpg) no-repeat center bottom;
+}
+.pro-bottom{
+    width: 1205px;
+    height: 345px;
+    background-color: cornflowerblue;
+    display: flex;
+}
+.pro-box{
+    width: 310px;
+    height: 345px;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+.pro-box .fangtu{
+    width: 103px;
+    height: 103px;
+    background-color: #f39726;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 103px;
+    margin-top: 46px;
+    margin-left: 101px;
+    margin-bottom: 41px;
+}
+.fangtu img{
+    vertical-align: middle;
+}
+.pro-box h4{
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.pro-box p{
+    font-size: 12px;
+    color: #736d6d;
+    margin-left: 26px;
+    margin-right: 22px;
+    line-height: 19px;
+}
+
+/* 项目区域结束 */
+
+/* 案例区域开始 */
+.big-anli{
+    width: 100%;
+    height: 486px;
+    background-image: linear-gradient(#898991,#b8b7bc,#bfc3c6);
+}
+.anli{
+    width: 1205px;
+    height: 486px;
+    margin: 0 auto;
+}
+.anli-top{
+    width: 1205px;
+    height: 75px;
+    overflow: hidden;
+}
+.anli-bottom{
+    width: 1205px;
+    height: 411px;
+    display: flex;
+    overflow: hidden;
+    
+}
+.anli-bottom div{
+    width: 267px;
+    height: 269px;
+    background-color: #fff;
+    margin-right: 14px;
+    flex-shrink: 0;
+    margin-top: 45px;
+    padding: 12px;
+    text-align: center;
+    overflow: hidden;
+}
+.anli-bottom .anli-box1{
+    margin-right: 0;
+}
+.anli-bottom h4{
+    font-size: 18px;
+    color: #555;
+    font-weight: 400;
+    margin-top: 17px;
+    margin-bottom: 12px;
+}
+.anli-bottom p{
+    font-size: 12px;
+    color: #7d7c7c;
+}
+
+/* 案例区域结束 */
+
+
+/* 图片区域开始 */
+.big-img{
+    width: 100%;
+    height: 451px;
+}
+.img{
+    width: 1205px;
+    height: 451px;
+    background-color: #fff;
+    margin:0 auto;
+}
+.img-top{
+    width: 1205px;
+    height: 75px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.img-bottom{
+    width: 1205px;
+    height: 376px;
+    background-color: #fff;
+}
+.img-bottom img{
+    width: 1205px;
+    height: 273px;
+    margin-top: 35px;
+}
+/* 图片区域结束 */
+
+
+/* 介绍区域开始 */
+.big-jieshao{
+    width: 100%;
+    height: 521px;
+    background-image: linear-gradient(#3a3845,#56505a);
+}
+.jieshao{
+    width: 1205px;
+    height: 521px;
+    background-image: linear-gradient(#3a3845,#56505a);
+    margin: 0 auto;
+    display: flex;
+}
+.jieshao-left{
+    width: 603px;
+    height: 521px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.jieshao-left img{
+    width: 538px;
+    height: 328px;
+    margin-top: 95px;
+    margin-left: 22px;
+}
+.jieshao-right{
+    width: 552px;
+    height: 491px;
+    flex-shrink: 0;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.jieshao-right h4{
+    color: #fffeea;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 36px;
+    margin-bottom: 10px;
+}
+.jieshao-right p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.sbox1{
+    width: 84px;
+    height: 32px;
+    border: 2px solid #fff;
+    border-radius: 20%;
+    text-align: center;
+   
+}
+.jieshao-right .sbox1 p{
+    line-height: 32px;
+    font-size: 14px;
+}
+/* 介绍区域结束 */
+
+
+/* 客户展示区开始 */
+.big-show{
+    width: 100%;
+    height: 344px;
+    background-color: #fff;
+}
+.show{
+    width: 1205px;
+    height: 332px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.show-top{
+    width: 1205px;
+    height: 75px;
+    overflow: hidden;
+}
+.show-bottom{
+    width: 1205px;
+    height: 257px;
+    background-color: #fff;
+    display: flex;
+    overflow: hidden;
+}
+.show-box{
+    width: 217px;
+    height: 119px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 119px;
+    margin-top: 40px;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.show-box img{
+     vertical-align: middle;
+}
+.show-foot{
+    width: 100%;
+    height: 12px;
+    background-color: #d63c3c;
+}
+/* 客户展示区结束 */
+
+
+/* 底部区域开始 */
+.big-us{
+    width: 100%;
+   height:  345px;
+   background-color: #393e44;
+}
+.us{
+    width: 1205px;
+    height: 345px;
+    background-color: #393e44;
+    margin: 0 auto;
+    display: flex;
+}
+.us>div{
+    width: 301px;
+    height: 345px;
+    background-color: #393e44;
+    flex-shrink: 0;
+    overflow: hidden;
+    /* padding-left: 95px; */
+   
+}
+.us-box2,.us-box3{
+    text-align: center;
+}
+
+.us-box1{
+    
+    line-height: 345px;
+}
+.us-box1 img{
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.us h3{
+    color: #7c99a9;
+    font-size: 22px;
+    margin-top: 80px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.us h3 img{
+    /* float: left; */
+    vertical-align: middle;
+}
+.us-box2 li a,.us-box3 li a{
+    color: #7c99a9;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.us-box4 img{
+    float: left;
+}
+.us-box4 span{
+    color: #7c99a9;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.us .us-box4{
+    width: 206px;
+    padding-left: 55px;
+}
+.us-box1,.us-box2,.us-box3{
+    background: url(/04第四周/day01/首页图片/首页_09.jpg) no-repeat right center;
+}
+/* 底部区域结束 */
+
+/* 尾部区域开始 */
+.big-footer{
+    width: 100%;
+    height: 80px;
+    background-color: #2f3239;
+}
+.footer{
+    width: 1205px;
+    height: 80px;
+    margin: 0 auto;
+}
+.footer p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 80px;
+    color: #6a6e71;
+}
+/* 尾部区域结束 */
+
+

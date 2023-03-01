@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* margin使用口诀：谁要动就给谁添加margin
+        margin-top
+        margin-left
+        margin-right
+        margin-bottom
+
+        简写：四个简写
+        margin：20px 30px 40px 40px;   上右下左，顺时针方向
+        三个简写
+        margin：20px 30px 40px ；  上  左右  下
+        两个简写
+        margin：20px 30px；    上下，左右
+        */
+
+        /* margin-top使用是有兼容bug的，所以子元素添加了margin之后，会导致父元素整个下移的情况。
+        需要给父元素添加：overflow:hidden ;*/
+
+        /* margin:0 auto  ;     auto  自适应
+        实现一个有宽度且宽度生效的的元素（独占一行的元素）水平居中
+        .div{
+            width:200px;
+            margin:0 auto;
+        }
+        */
+        *{margin: 0px;padding: 0px;}
+        .boss{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .image{
+            /* width: 200px;
+            height: 200px; */
+            margin-top: 20px;
+            margin-left: 20px;
+            
+        }
+        p{
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+  <div class="boss">
+    <div class="box"><img class="image" src="/01第一周/image/a1.jpg" alt="">
+    <p>这是一张图片</p>
+    </div>
+  </div>
+</body>
+</html>

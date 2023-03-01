@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid #000;
+            border-collapse: collapse;
+            width: 500px;
+            height: 200px;
+        }
+        tr,td{
+            border: 1px solid #000;
+        }
+        .tr1,.anniu{
+            text-align: center;
+        }
+        .pass,.user{
+            text-align: right;
+        }
+        .pass1,.user1{
+            margin-left: 10px;
+        }
+        .anniu{
+            margin-left: 30px;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <!-- <form action="">
+        用户名：<input type="text" placeholder="请输入用户名"><br>
+        密码：<input type="password" placeholder="请输入密码"><br>
+        <input type="submit" value="提交">
+        <button>登录</button>
+        <input type="reset"  value="重置">
+    </form> -->
+
+    <form action="">
+        <table>
+            <tr class="tr1">
+                <td rowspan="4">总体信息</td>
+                <td colspan="2">用户注册</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td  class="user">用户名：</td>
+                <td><input  class="user1"type="text" placeholder="请输入用户名"></td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td class="pass">密码：</td>
+                <td><input  class="pass1" type="password" placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td colspan="2" class="anniu"><input type="submit"> &nbsp;&nbsp;<input type="reset" value="重置"></td>
+                <!-- <td></td> -->
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(88, 98, 88);
+            margin: 20px;
+        }
+        @keyframes mymove{
+            form{width: 300px;
+            background-color: rgb(170, 188, 188);}
+            to{
+                width: 500px;
+                background-color: rgb(207, 40, 40);
+            }
+        }
+        @keyframes move1{
+            10%{width: 300px;}
+            50%{width: 500px;}
+            90%{width: 100px;}
+            100%{width: 500px;}
+        }
+
+        /* div:nth-child(1){
+            animation: mymove 3s ease-in 1s infinite alternate;
+        } */
+        div:nth-child(2){
+            animation: move1 3s linear infinite alternate forwards;
+        }
+    </style>
+</head>
+<body>
+   <div>1</div>
+   <div>2</div>
+   <div>3</div>
+   <div>4</div>
+   <div>5</div>
+   <div>6</div>
+   <div>7</div>
+   <div>8</div>
+   <div>9</div>
+   <div>10</div>
+</body>
+</html>

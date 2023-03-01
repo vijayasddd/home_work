@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .boss{
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            margin: 100px auto;
+            border-top: 10px solid red;
+            border-left: 10px dotted orange;
+            border-right: 10px double green;
+            border-bottom: 10px dashed pink;
+        }
+        /* 
+        border-width:10px;(边框的粗细)
+        border-color:red;(边框的颜色)
+        border-style:solid(实线)；dashed(虚线)；dotted(点划线)；double(双实线)
+        这三个样式可以简写成一行代码
+        border:red solid 10px;
+        */
+
+        /* 加了边框之后，元素的大小是包含边框的值的，如果想要保持元素大小不变，需要做减法，减去边框的大小 */
+    </style>
+</head>
+<body>
+    <div class="boss"></div>
+</body>
+</html>

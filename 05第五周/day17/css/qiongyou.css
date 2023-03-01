@@ -1,0 +1,288 @@
+html {
+    font-size: calc(100vw / 7.5);
+}
+
+a,
+input,
+img,
+i,
+span,
+em,
+strong {
+    display: block;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+/* 头部 */
+header {
+    width: 100%;
+    height: 3.77rem
+        /* 377/100 */
+    ;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.search {
+    width: 100%;
+    height: .6rem
+        /* 60/100 */
+    ;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: .3rem
+        /* 30/100 */
+    ;
+    padding: 0 .3rem
+        /* 30/100 */
+    ;
+    align-items: center;
+}
+
+.icon-caidan {
+    font-size: .4rem
+        /* 40/100 */
+    ;
+    color: #fff;
+    margin-right: .6rem
+        /* 60/100 */
+    ;
+}
+.icon-sousuo{
+    color: #fff;
+    font-size: .26rem /* 26/100 */;
+    margin-right: .12rem /* 26/100 */;
+    font-weight: 700;
+}
+
+.input {
+    width: 5.94rem/* 594/100 */;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: .3rem/* 30/100 */;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input input {
+    outline: none;
+    border: 0;
+    background: none;
+}
+
+.input input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+
+/* 内容区域 */
+section {
+    width: 100%;
+    height: 3.7rem
+        /* 370/100 */
+    ;
+    background-color: #fff;
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    color: #646464;
+    font-size: .26rem
+        /* 26/100 */
+    ;
+}
+
+section ul li {
+    width: 25%;
+    height: 50%;
+    text-align: center;
+}
+
+section ul li img {
+    width: .88rem
+        /* 88/100 */
+    ;
+    height: .88rem
+        /* 88/100 */
+    ;
+    margin: .3rem
+        /* 30/100 */
+        auto .2rem
+        /* 20/100 */
+    ;
+}
+
+/* 其他 */
+aside {
+    width: 100%;
+    height: 1.68rem
+        /* 168/100 */
+    ;
+    margin: .3rem /* 30/100 */ 0;
+    background-color: #fff;
+
+}
+
+
+aside ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: .01rem solid #ccc;
+}
+
+aside ul li {
+    width: 33.3%;
+    height: 50%;
+    color: #535353;
+    font-size: .24rem /* 24/100 */;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: .01rem /* 1/100 */ solid #ccc;
+    border-bottom: .01rem /* 1/100 */ solid #ccc;
+}
+aside ul li:nth-child(3n){
+    border-right: 0;
+}
+
+aside li img {
+    margin-right: .23rem/* 23/100 */;
+
+}
+
+/* 图片区域 */
+.im{
+    width: 100%;
+    background-color: #fff;
+   padding: 0 .3rem /* 30/100 */;
+}
+.im-top{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+   
+}
+.im-top h2{
+    color: #444444;
+    font-size: .32rem /* 32/100 */;
+    margin: .38rem 0 .34rem /* 34/100 */;
+    
+}
+.im-bottom{
+    width: 100%;
+}
+.im-bottom ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.im-bottom ul li{
+    height: 4.03rem /* 403/100 */;
+    width: 3.3rem /* 330/100 */;
+    margin-right: .3rem /* 30/100 */;
+}
+.im-bottom ul li:nth-child(2n){
+    margin-right: 0;
+}
+.im-bottom ul li img{
+    width: 100%;
+    height: 2.22rem /* 222/100 */;
+}
+.im-bottom ul li h5{
+    color: #1f2023;
+    font-size: .28rem /* 28/100 */;
+    line-height: .4rem /* 40/100 */;
+    margin-top: .22rem /* 22/100 */;
+}
+.im-bottom p{
+    color: #adadaf;
+    font-size: .2rem /* 20/100 */;
+    margin: .26rem 0 .48rem /* 48/100 */;
+}
+.im-bottom p span{
+    display: inline;
+    color: #ff8579;
+    font-size: .22rem /* 22/100 */;
+}
+
+
+/* 底部区域 */
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin-bottom: 1rem /* 100/100 */;
+}
+
+footer p{
+    color: #9ea3ab;
+    font-size: .2rem /* 20/100 */;
+    margin: .5rem 0 .23rem /* 23/100 */;
+}
+footer ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .3rem /* 30/100 */;
+}
+footer ul li{
+    color: #656565;
+    font-size: .2rem /* 20/100 */;
+    margin-right: .68rem /* 68/100 */;
+}
+footer ul li:nth-child(3){
+    margin-right: 0;
+
+}
+
+/* 底部导航区域 */
+nav{
+    width: 100%;
+    height: 1rem /* 100/100 */;
+    background-color: #fff;
+    box-shadow: 0 .01rem /* 1/100 */ .01rem /* 1/100 */ .01rem /* 1/100 */ #000;
+    position: fixed;
+    bottom: 0;
+}
+nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 .99rem /* 99/100 */;
+    color: #6e6e6e;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+nav ul li p{
+    font-size: .24rem /* 24/100 */;
+}
+nav ul li i{
+    font-size: .4rem /* 40/100 */;
+    margin-bottom: .08rem /* 16/100 */;
+    margin-left: .04rem /* 5/100 */;
+
+}
+nav ul li .active{
+    color: #00b081;
+}

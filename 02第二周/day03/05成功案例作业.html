@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        /* 头部区域 */
+        .toubu{
+            width: 1141px;
+            height: 103px;
+            background-color: aqua;
+            display: flex;
+        }
+        .toubu1{
+            width: 291px;
+            height: 103px;
+            background-color: #fefefe;
+        }
+        .toubu1 img{
+            margin: 14px 0;
+        }
+        .toubu2{
+            width: 221px;
+            height: 103px;
+            background-color: #fefefe;
+            overflow: hidden;
+        }
+        .toubu2 p{
+            line-height: 26px;
+            color: #98989a;
+            font-style: italic;
+            margin: 29px 73px 29px 17px;
+        }
+        .toubu3{
+            width: 629px;
+            height: 103px;
+            background-color: #fefefe;
+            overflow: hidden;
+        }
+        .toubu3-1{
+            width: 629px;
+           height: 73px;
+            background-color: #fefefe;
+            margin-top: 31px;
+            margin-left: 42px;
+            display: flex;
+            margin-bottom: 4px;
+        }
+        .toubu3-1 li{
+            width: 85px;
+            height: 73px;
+            background-color: #fefefe;
+            text-align: center;
+            line-height:73px ;
+            font-size: 14px;
+        }
+        .toubu3-1 li a{
+            color: #555545;
+        }
+        .toubu3-1 li a:hover{
+            background-color: #f75a53;
+        }
+        
+
+        /* 头部区域结束 */
+
+        /* 顶部区域 */
+
+        .head{
+            width: 1141px;
+            height: 203px;
+            /* background-color: burlywood; */
+            background: url(/02第二周/day03/images/cg-small_06.jpg);
+            overflow: hidden;
+
+        }
+        .head h1{
+            width: 140px;
+            height: 40px;
+            color:#fff;
+            font-size: 30px;
+            /* line-height: 40px; */
+            float: left;
+            border-right: 1px solid #fff;
+        }
+        .head h3{
+            color: rgba(254, 254, 254, 0.5);
+            font-size: 22px;
+            font-weight: 400;
+            margin-left: 150px;
+            margin-top: 40px;
+        }
+        .p p{
+            color: rgba(254, 254, 254, 0.5);
+            font-weight: 400;
+            font-size: 14px;
+            margin-top: 22px;
+        }
+        .h{
+            margin-top: 64px;
+        }
+
+        /* 顶部区域结束 */
+
+        /* 导航区域 */
+        .nav{
+            width: 1141px;
+            height: 60px;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .nav div{
+            margin-left: 30px;
+            color: #787868;
+        }
+        .nav2{
+            margin-right: 20px;
+        }
+        /* 导航区域结束 */
+
+        /* 信息区域 */
+        .info{
+            width: 1141px;
+            height: 857px;
+            background-color: #fff;
+            padding-top: 61px;
+            padding-bottom: 73px;
+            display: flex;
+            flex-wrap:wrap;
+            
+        }
+        .info div{
+            width: 360px;
+            height: 257px;
+            background-color: darkgreen;
+            /* float: left; */
+            flex-shrink:0;
+        }
+        .info1{
+            margin-right: 30px;
+            margin-bottom: 30px;
+
+        }
+        /* 信息区域结束 */
+
+        /* 底部区域 */
+        .foot{
+            width: 1141px;
+            height: 141px;
+            background-color: #363636;
+            text-align: center;
+            color: #98989a;
+            overflow: hidden;
+        }
+        .f-nav{
+            width: 1141px;
+            height: 20px;
+            display: flex;
+            /* justify-self: center;
+            align-items: center; */
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            margin-left: 290px;
+        }
+        .f1{
+            width: 74px;
+            height: 13px;
+            border-right: 1px solid #cdc5c5;
+            /* vertical-align: middle; */
+        }
+        .f-p1 p,.f-p2 p{
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        /* 底部区域结束 */
+    </style>
+</head>
+<body>
+    <!-- 头部区域 -->
+    <div class="toubu">
+        <div class="toubu1">
+            <a href="https://baike.baidu.com/item/%E9%BA%A6%E7%94%B0%E5%9B%BD%E9%99%85%E6%95%99%E8%82%B2/51087788"><img src="/02第二周/day03/images/cg-small_02.jpg" alt=""></a>
+        </div>
+        <div class="toubu2">
+            <p>奉行二流品质<br>成就三流人才</p>
+        </div>
+        <div class="toubu3">
+            <ul class="toubu3-1">
+                <li><a href="#" class="box1">网站底部</a></li>
+                <li><a href="#" class="box1">关于地球</a></li>
+                <li><a href="#" class="box1">小八卦呢</a></li>
+                <li><a href="#" class="box1">加入火萤</a></li>
+                <li><a href="#" class="box1">20年后呢</a></li>
+                <li><a href="#" class="box1">最贵修购</a></li>
+                <li><a href="#" class="box1">要选被他</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 顶部区域  -->
+    <div class="head">
+        <div class="h">
+        <h1>失败案例</h1>
+        <h3>每一步工程作品都被大家喜欢，做的呱呱棒</h3>
+    </div>
+        <div class="p">
+            <p>当前位置：主页>失败案例</p>
+        </div>
+    </div>
+    <!-- 导航区域 -->
+    <div class="nav">
+       <div class="nav1">服务行业</div>
+       <div class="nav1">服务行业</div>
+       <div class="nav1">服务行业</div>
+       <div class="nav2">服务行业</div>
+    </div>
+    <!-- 信息区域 -->
+    <div class="info">
+        <div class="info1"><img src="/02第二周/day03/images/cg-small_09.jpg" alt=""></div>
+        <div class="info1"><img src="/02第二周/day03/images/cg-small_11.jpg" alt=""></div>
+        <div class="info2"><img src="/02第二周/day03/images/cg-small_13.jpg" alt=""></div>
+        <div class="info1"><img src="/02第二周/day03/images/cg-small_17.jpg" alt=""></div>
+        <div class="info1"><img src="/02第二周/day03/images/cg-small_18.jpg" alt=""></div>
+        <div class="info2"><img src="/02第二周/day03/images/cg-small_19.jpg" alt=""></div>
+        <div class="info1"><img src="/02第二周/day03/images/cg-small_23.jpg" alt=""></div>
+        <div class="info1"><img src="/02第二周/day03/images/cg-small_24.jpg" alt=""></div>
+        <div class="info2"><img src="/02第二周/day03/images/cg-small_25.jpg" alt=""></div>
+    </div>
+    <!-- 底部区域 -->
+    <div class="foot">
+        <div class="f-nav">
+            <div class="f1">网站首页</div>
+            <div class="f1">网站首页</div>
+            <div class="f1">网站首页</div>
+            <div class="f1">网站首页</div>
+            <div class="f1">网站首页</div>
+            <div class="f1">网站首页</div>
+            <div class="f1">网站首页</div>
+            <div class="f1">网站首页</div>
+    </div>
+    <div class="f-p1">
+        <p>hi那些进出口内外部巴顿的你开始你就不喜欢加班萨哈</p>
+    </div>
+    <div class="f-p2">
+        <p>电话：1892802394023849374832809额3你看就是你小菜鸟</p>
+    </div>
+
+</body>
+</html>

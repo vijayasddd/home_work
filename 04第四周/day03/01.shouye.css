@@ -1,0 +1,265 @@
+*{
+    margin: 0;padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+/* 导航区域开始 */
+.big-nav{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+.nav{
+    width: 1171px;
+    height: 100px;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.nav-left{
+    height: 100px;
+    float: left;
+    overflow: hidden;
+    display: flex;
+}
+.nav-left img{
+    width: 56px;
+    height: 56px;
+    margin-top: 22px;
+}
+.nav-left ul{
+    height: 56px;
+    text-align: center;
+    line-height:56px ;
+    margin-top: 22px;
+    
+}
+.nav-left ul li{
+    float: left;
+    height: 100%;
+    font-size:16px;
+    font-weight: 400; 
+    padding: 0 20px;   
+}
+.nav-left li a{
+    display: block;
+    height: 100%;
+    color: #00000c;
+}
+.nav-left ul li:hover{
+    background-color: rgb(53, 142, 142);
+}
+.nav-left .nav-li1 a{
+    color: #82d9d3;
+}
+
+.nav-right{
+    height: 100px;
+    float: right;
+    display: flex;
+    overflow: hidden;
+}
+.navbox1{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.navbox1 img{
+    float: left;
+    margin-right: 10px;
+}
+/* 导航区域结束 */
+
+/* 间隔条区域开始 */
+.big-jiege{
+    width: 100%;
+    height: 40px;
+    background-color: #fdf8e4;
+    margin: 16px 0;
+    border-top: 1px solid #ffe7b7;
+    border-bottom: 1px solid #ffe7b7;
+}
+.big-jiege p{
+    font-size: 14px;
+    color: #ad592a;
+    line-height: 40px;
+    text-align: center;
+}
+/* 间隔条区域结束 */
+.big-banner{
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(#5d666f, #3d464d,#3c454c);
+
+}
+.banner{
+    width: 1171px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    overflow: hidden;
+}
+.banner h1{
+    color: #fffffd;
+    font-size:30px;
+    font-weight: 700;
+    margin-top: 105px;
+    margin-bottom: 53px;
+
+}
+.banner-ding{
+    width: 188px;
+    height: 46px;
+    background-color: #53cac4;
+    border-radius: 28px;
+    color: #fff;
+    font-size: 20px;
+    line-height:46px ;
+    text-align: center;
+}
+
+
+/* 内容区域开始 */
+section{
+    width: 100%;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+.section{
+    background-color: #f3f3f3;
+    display: inline-block;
+    text-align: left;
+   
+}
+.sec1{
+    width: 1171px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: -70px auto 0;
+    /* position: relative;
+    left: 0;
+    top: -70px; */
+    
+}
+.sec1>div{
+    width: 389px;
+    background-color: #fff;
+    border-right: 1px solid #e1dede;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 55px;
+}
+.sec1 .tebie{
+    border-right: 0;
+}
+.sec1-box1 h4{
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 10px;
+    border-left: 3px solid #52c9c3;
+    float: left;
+}
+.sbox{
+    width: 47px;
+    height: 18px;
+    border: 1px solid #dbd6d6;
+    color: #8c8c8c;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    float: right;
+    border-radius: 25px;
+}
+.sec1-box1 h4,.sec1-box1 .sbox{
+    margin: 43px 0;
+}
+.sec1-box1 img{
+    width: 283px;
+    height: 157px;
+    margin-bottom: 35px;
+}
+.sec-p1{
+    color: #404040;
+    font-size: 18px;
+    line-height: 31px;
+    margin-bottom: 12px;
+}
+.sec-p2{
+    color:#a1a1a1;
+    font-size: 14px;
+    margin-bottom: 54px;
+}
+.sec2{
+    width: 1171px;
+    /* height: 728px; */
+    background-color: darkorange;
+    padding: 67px 48px 5px;
+    box-sizing: border-box;
+}
+.sec2.img{
+
+}
+
+.sec3{
+    width: 1171px;
+    /* height: 432px; */
+}
+/* 内容区域结束 */
+
+
+/* 底部区域开始 */
+.big-footer{
+    width: 100%;
+    height: 234px;
+    background-color: #000;
+}
+.footer{
+    width: 1171px;
+    height: 234px;
+    margin: 0 auto;
+}
+.footer1{
+    width: 1171px;
+    height: 123px;
+    padding-left: 21px;
+}
+.footer1 ul{
+    height: 123px;
+    line-height: 123px;
+    text-align: center;
+}
+.footer1 ul li{
+    height: 123px;
+    font-size: 16px;
+    padding: 0 22px;
+    display: inline-block;
+}
+.footer1 ul li a{
+    color: #a8a2a2;
+    display: block;
+    height: 123px;
+    font-weight: 400;
+}
+.footer2{
+    width: 1171px;
+    height: 111px;
+    color: #8b8787;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+}
+/* 底部区域结束 */

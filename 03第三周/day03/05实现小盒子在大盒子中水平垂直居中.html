@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        /* 方法一：纯margin */
+        /* .boss{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(107, 186, 186);
+            overflow: hidden;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: rgb(247, 182, 182);
+            margin-top: 150px;
+            margin-left: 150px;
+        } */
+
+
+        /* 方法二 */
+        /* .boss{
+            width: 350px;
+            height: 350px;
+            background-color: rgb(107, 186, 186);
+            padding-left: 150px;
+           padding-top: 150px;
+            
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: rgb(247, 182, 182);  
+        } */
+
+
+        /* 方法三 */
+        /* .boss{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(107, 186, 186);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: rgb(247, 182, 182);  
+        } */
+
+
+        /* 方法四 */
+        /* .boss{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(107, 186, 186);
+          position: relative;
+            
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: rgb(247, 182, 182);  
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        } */
+
+
+        /* 方法五 */
+        /* .boss{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(107, 186, 186);
+            text-align: center;
+            line-height: 500px;
+            
+           
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: rgb(247, 182, 182);  
+            display: inline-block;
+            vertical-align:middle ;
+            
+        } */
+
+
+        /* 方法六 */
+        .boss{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(107, 186, 186);
+            position: relative;  
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: rgb(247, 182, 182);  
+            position: absolute;
+            left: 50%;
+            top: 50%;
+           /* margin-right: 100px; */
+           /* margin-bottom: 100px; */
+           /* 这个为什么不行 */
+           margin-top: -100px;
+           margin-left: -100px;
+        }
+
+        /* 方法七 */
+        .boss{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(107, 186, 186);  
+            position: relative;
+            /* 需要加这个吗 */
+           
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: rgb(247, 182, 182);  
+            position:absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="boss">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        /* 方法一  纯margin方法 */
+        /* .box{
+            width: 500px;
+            height: 500px;
+            background: rgb(117, 199, 199);
+            overflow: hidden;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: rgb(205, 125, 125);
+            margin-top: 150px;
+            margin-left: 150px;
+        } */
+
+
+
+        /* 方法二 纯padding方法*/
+        /* .box{
+            width: 350px;
+            height: 350px;
+            background: rgb(117, 199, 199);
+            padding-left: 150px;
+            padding-top: 150px;
+           
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: rgb(205, 125, 125);   
+        } */
+
+
+
+        /* 方法三、转为行内块元素 */
+        /* .box{
+            width: 500px;
+            height: 500px;
+            background: rgb(117, 199, 199);
+            text-align: center;
+            line-height: 500px;  
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: rgb(205, 125, 125);  
+            display: inline-block;
+            vertical-align: middle;
+        } */
+
+
+
+        /* 方法四 纯定位*/
+        /* .box{
+            width: 500px;
+            height: 500px;
+            background: rgb(117, 199, 199); 
+            position: relative;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: rgb(205, 125, 125); 
+            position: absolute;
+            left: 150px;
+            top: 150px;
+        } */
+
+
+        /* 方法五、定位+margin取负值 */
+        /* .box{
+            width: 500px;
+            height: 500px;
+            background: rgb(117, 199, 199);
+            position: relative;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: rgb(205, 125, 125); 
+            position: absolute;
+            left: 50%;
+            向左移动父元素宽度的50%
+            margin-left: -100px;
+            向左移动子元素宽度的一半
+            top: 50%;
+            向下移动父元素高度的一半
+            margin-top: -100px;
+            向上移动子元素高度的一半
+
+        } */
+
+
+        /* 方法六、弹性盒display:flex  justify-content:center;align-items:center; */
+        /* .box{
+            width: 500px;
+            height: 500px;
+            background: rgb(117, 199, 199);
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: rgb(205, 125, 125);  
+           
+        } */
+
+
+        /* 七、定位+margin：auto； */
+        .box{
+            width: 500px;
+            height: 500px;
+            background: rgb(117, 199, 199);
+            position:relative;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: rgb(205, 125, 125);  
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

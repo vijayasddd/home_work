@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .t{
+            width: 400px;
+            height: 200px;
+            /* 去掉单元格之间的间距 */
+            border-collapse: collapse;   
+        }
+       tr,td{
+            border: 1px solid black;
+        }
+       .xinxi,.tijiao,.zongti{
+        text-align: center;
+       } 
+       .p1,.p2{
+        text-align: right;
+       }
+       
+    </style>
+</head>
+<body>
+    <form action="">
+        <!--  border-spacing="0" border-padding="0" 可以作为内联样式去除表格的单元格间距和内边距，也可以用css来写-->
+        <table class="t" border-spacing="0" border-padding="0">
+            <!-- 表格快捷键的写法：table>tr*4>td{$}*   其中*表示的是乘号 -->
+            <tr>
+                <td rowspan="4"><h3 class="zongti">总体信息</h3></td>
+                <td colspan="2"><h3 class="xinxi">用户注册</h3></td>
+            </tr>
+            <tr>
+                <td><p class="p1">用户名：</p></td>
+                <td>&nbsp;&nbsp;&nbsp;<input type="text" placeholder="请输入用户名"></td>
+            </tr><tr>
+                
+                <td><p class="p2">密码：</p></td>
+                <td>&nbsp;&nbsp;&nbsp;<input type="password" placeholder="请输入密码"></td>
+            </tr><tr>
+                
+                <td colspan="2" class="tijiao">
+                    <input type="submit">
+                   <input type="reset">
+                </td>
+
+            </tr>
+        </table>
+    </form>
+   
+</body>
+
+</html>

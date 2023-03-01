@@ -1,0 +1,260 @@
+/* 头部区域开始 */
+header {
+    width: 100%;
+    height: 95px;
+    padding: 17px 20px;
+    font-size: 34px;
+}
+
+.head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #e6e6e8;
+    border-radius: 10px;
+    line-height: 59px;
+}
+
+.head1 {
+    flex: 1;
+    text-align: center;
+}
+
+.head1 img {
+    /* float: left; */
+    margin-right: 18px;
+}
+
+.head1 img,
+.head1 span {
+    vertical-align: middle;
+}
+
+.head2 {
+    width: 60px;
+    text-align: center;
+    line-height: 59px;
+}
+
+.head2 img {
+    vertical-align: middle;
+}
+
+/* 头部区域结束 */
+
+/* 登录区域开始 */
+aside {
+    width: 100%;
+    height: 178px;
+}
+
+.a-top {
+    width: 100%;
+    height: 91px;
+    border-top: 1px solid #ccc;
+    background-color: #00b38a;
+    text-align: center;
+}
+
+.a-top h1 {
+    color: #fff;
+    font-size: 36px;
+    line-height: 91px;
+}
+
+.a-right {
+    width: 100%;
+    height: 88px;
+    padding: 12px 30px 16px;
+    display: flex;
+    text-align: center;
+}
+
+.a-right input,
+.a-right button {
+    outline: none;
+    border: 0;
+}
+
+.a-right input {
+    flex: 1;
+    font-size: 32px;
+}
+
+.a-right input::placeholder {
+    color: #777777;
+    font-size: 30px;
+    line-height: 62px;
+}
+
+.a-right button {
+    width: 173px;
+    border-radius: 30px;
+    background-color: #f5f5f5;
+    color: #00b38a;
+    font-size: 30px;
+    line-height: 62px;
+}
+
+/* 登录区域结束 */
+
+
+/* 内容区域开始 */
+section {
+    width: 100%;
+}
+
+section ul {
+    width: 100%;
+}
+
+section li {
+    width: 100%;
+    height: 182px;
+    padding: 0 28px;
+    border-top: 2px solid #ccc;
+    display: flex;
+}
+
+.l-left {
+    flex: 1;
+    display: flex;
+}
+
+.l-tu {
+    width: 125px;
+    height: 182px;
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+}
+
+.l-tu img {
+    width: 100%;
+    height: 45px;
+}
+
+.l-word {
+    flex: 1;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.l-word h1 {
+    color: #333333;
+    font-size: 30px;
+    margin: 36px 0 14px;
+}
+
+.l-word h6 {
+    color: #404040;
+    font-size: 24px;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+.l-word p {
+    color: #888888;
+    font-size: 20px;
+}
+
+.l-right {
+    width: 123px;
+    text-align: right;
+    color: #00b38a;
+    font-size: 26px;
+    overflow: hidden;
+}
+
+.l-right h4 {
+    margin-top: 90px;
+}
+
+/* 内容区域结束 */
+
+/* 底部区域开始 */
+footer {
+    width: 100%;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+footer .f1{
+    width: 33.3%;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+}
+
+footer>div:hover {
+    background-color: #e7f3f0;
+    color: #00b38a;
+}
+
+footer>div img {
+    /* float: left; */
+    margin-right: 2px;
+}
+
+footer>div img,
+footer>div span {
+    vertical-align: middle;
+}
+
+.shadow {
+    width: 100%;
+    height: 134px;
+    background-color: rgba(38, 38, 38, .7);
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: -134px;
+    padding: 0 20px;
+    align-items: center;
+    /* line-height: 0; */
+}
+
+.s-tu1 {
+    width: 87px;
+}
+
+.s-wen {
+    flex: 1;
+    display: flex;
+}
+
+.s-wen h1 {
+    color: #fff;
+    font-size: 56px;
+    font-weight: 900;
+    width: 141px;
+    margin-left: 11px;
+}
+/* .s-r {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+} */
+
+.s-r h3 {
+    color: #f2f2f2;
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+.s-r p{
+    color: #a4a4a4;
+    font-size: 18px;
+}
+
+.s-tu2 {
+    width: 198px;
+}
+
+/* 底部区域结束 */

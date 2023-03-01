@@ -1,0 +1,392 @@
+html {
+    font-size: calc(100vw / 7.5);
+}
+
+i,
+a,
+input,
+img,
+span {
+    display: block;
+}
+
+body {
+    font-size: .16rem
+        /* 16/100 */
+    ;
+}
+
+
+
+/* 头部 */
+header {
+    width: 100%;
+    height: .86rem
+        /* 86/100 */
+    ;
+    border-bottom: .01rem
+        /* 1/100 */
+        solid #ccc;
+    display: flex;
+    padding-left: 2.1rem
+        /* 210/100 */
+    ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.left {
+    width: 3.3rem
+        /* 330/100 */
+    ;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left h3 {
+    color: #212121;
+    font-size: .32rem
+        /* 32/100 */
+    ;
+}
+
+.right {
+    width: 1.92rem
+        /* 192/100 */
+    ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.right i {
+    color: #00000c;
+    font-size: .4rem
+        /* 40/100 */
+    ;
+}
+
+/* 搜索 */
+.sousuo {
+    /* width: 100%; */
+    height: .94rem
+        /* 94/100 */
+    ;
+    display: flex;
+    margin: .14rem
+        /* 14/100 */
+        .24rem
+        /* 24/100 */
+    ;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem
+        /* 30/100 */
+    ;
+    background-color: #f9f9f9;
+    margin-top: 1.01rem
+        /* 86/100 */
+    ;
+}
+
+.sousuo span {
+    color: #9d9d9d;
+    font-size: .28rem
+        /* 28/100 */
+    ;
+}
+
+.sousuo i {
+    color: #ea7f9d;
+    font-size: .28rem
+        /* 28/100 */
+    ;
+
+}
+
+/* 内容 */
+section {
+    width: 100%;
+    height: 3.65rem
+        /* 365/100 */
+    ;
+    margin-bottom: .4rem
+        /* 12/100 */
+    ;
+}
+
+section ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 .24rem
+        /* 24/100 */
+    ;
+    flex-wrap: wrap;
+}
+
+section ul li {
+    height: 1.95rem
+        /* 195/100 */
+    ;
+    width: 25%;
+    text-align: center;
+}
+
+section ul li img {
+    width: 1.1rem
+        /* 110/100 */
+    ;
+    height: 1.1rem
+        /* 110/100 */
+    ;
+    margin: .24rem auto .1rem
+        /* 10/100 */
+    ;
+}
+
+section span {
+    color: #212121;
+    font-size: .24rem
+        /* 24/100 */
+    ;
+}
+
+/* 其他区域 */
+aside {
+    width: 100%;
+    height: 1rem
+        /* 100/100 */
+    ;
+    display: flex;
+    padding: 0 .24rem
+        /* 24/100 */
+    ;
+    margin-bottom: .28rem
+        /* 28/100 */
+    ;
+
+}
+
+.a-box {
+    margin-right: .16rem
+        /* 16/100 */
+    ;
+    display: flex;
+    border: .01rem
+        /* 1/100 */
+        solid #ccc;
+    width: 2.26rem
+        /* 226/100 */
+    ;
+    height: 100%;
+    border-radius: .1rem
+        /* 5/100 */
+    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.a-box:nth-child(3) {
+    margin-right: 0;
+}
+
+.box-left h6 {
+    color: #00000c;
+    font-size: .26rem
+        /* 26/100 */
+    ;
+}
+
+.box-left {
+    margin-right: .1rem
+        /* 10/100 */
+    ;
+}
+
+.box-left p {
+    color: #b3b3b3;
+    font-size: .24rem
+        /* 24/100 */
+    ;
+}
+
+.box-right img {
+    width: .5rem
+        /* 50/100 */
+    ;
+    height: .5rem
+        /* 50/100 */
+    ;
+}
+
+
+/* 广告 */
+.banner {
+    width: 100%;
+    height: 1.8rem
+        /* 180/100 */
+    ;
+}
+
+.banner img {
+    width: 7.07rem
+        /* 707/100 */
+    ;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: .1rem
+        /* 10/100 */
+    ;
+}
+
+/* 图片 */
+.tu {
+    width: 100%;
+    padding: 0 .24rem /* 24/100 */;
+    margin-bottom: 1rem
+        /* 100/100 */
+    ;
+}
+
+.tu-top {
+    width: 100%;
+    height: 1.07rem
+        /* 107/100 */
+    ;
+    color: #343434;
+    font-size: .3rem
+        /* 30/100 */
+    ;
+}
+
+.tu-top ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tu-top ul li {
+    margin-right: .9rem
+        /* 90/100 */
+    ;
+    position: relative;
+}
+
+.tu-top ul li:nth-child(1) {
+    color: #00000c;
+    font-size: .32rem
+        /* 32/100 */
+    ;
+    font-weight: 800;
+}
+
+.di {
+    width: .55rem
+        /* 55/100 */
+    ;
+    height: .06rem
+        /* 6/100 */
+    ;
+    background-color: #ea7f9d;
+    position: absolute;
+    left: .05rem
+        /* 5/100 */
+    ;
+    bottom: .05rem
+        /* 2/100 */
+    ;
+    z-index: -1;
+}
+
+.tu-bottom {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bo1 {
+    width: 3.4rem
+        /* 343/100 */
+    ;
+    height: 2.5rem
+        /* 250/100 */
+    ;
+    margin-bottom: .2rem
+        /* 20/100 */
+    ;
+}
+
+.bo1:nth-child(2n-1) {
+    margin-right: .2rem
+        /* 20/100 */
+    ;
+}
+
+.bo1 img {
+    width: 3.4rem
+        /* 343/100 */
+    ;
+    height: 2.5rem
+        /* 250/100 */
+    ;
+    border-radius: .15rem /* 15/100 */;
+    box-shadow: 2px 2px 8px 6px #ccc;
+}
+
+/* 底部 */
+footer {
+    width: 100%;
+    height: 1rem
+        /* 100/100 */
+    ;
+    border-top: .01rem
+        /* 1/100 */
+        solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    color: #7e7e7e;
+    font-size: .2rem
+        /* 20/100 */
+    ;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+}
+
+footer .f1 i {
+    color: #7e7e7e;
+    font-size: .4rem
+        /* 40/100 */
+    ;
+    font-weight: 800;
+}
+
+footer span {
+    display: block;
+}
+
+.f1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f1:nth-child(4) {
+    color: #ea7a99;
+}
+
+.f1:nth-child(4) i {
+    color: #ea7a99;
+}

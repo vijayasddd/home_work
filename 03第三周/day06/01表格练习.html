@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        table{
+            border: 1px solid #000;
+            /* 去掉单元格之间的间距 */
+            border-spacing: 0;
+            /* 合并相邻单元格之间的边框 */
+            border-collapse: collapse;
+            width: 800px;
+            height: 300px;
+            /* 固定列宽 */
+            /* table-layout:fixed; */
+            /* margin: 100px auto; */
+            text-align: center;
+        }
+        td{
+            border: 1px solid #000;
+        }
+        .tr1{
+            background-color: #b7aeae;
+        }
+      
+    </style>
+</head>
+<body>
+    <table>
+        <caption>这是表格的标题</caption>
+        <colgroup span="2" class="zu1"></colgroup>
+        <colgroup span="3" class="zu2"></colgroup>
+        <!-- <thead> -->
+        <tr class="tr1">
+            <td  width="160px">班次名称</td>
+            <td width="100px">科目</td>
+            <td width="150px">授课内容</td>
+            <td width="200px">增值服务</td>
+            <td width="80px">课时</td>
+            <td width="100px">价格</td>
+            <td width="80px">试听</td>
+            <td width="80px">购买</td>
+        </tr>
+    <!-- </thead> -->
+    <tbody>
+        <tr>
+            <td rowspan="3">真题解析班</td>
+            <td>行测+申论</td>
+            <td>全国历年真题解析</td>
+            <td rowspan="3">课后详细简介，赠送24小时答疑服务</td>
+            <td>48</td>
+            <td>1280元</td>
+            <td><img src="image/img_03.jpg" alt=""></td>
+            <td><img src="image/img_05.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <!-- <td>01</td> -->
+            <td>行测</td>
+            <td>全科整体解析</td>
+            <!-- <td>04</td> -->
+            <td>48</td>
+            <td style="color:red;">980元</td>
+            <td><img src="image/img_03.jpg" alt=""></td>
+            <td><img src="image/img_05.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <!-- <td>01</td> -->
+            <td>申论</td>
+            <td>申论历年真题解析</td>
+            <!-- <td>04</td> -->
+            <td>16</td>
+            <td>580元</td>
+            <td><img src="image/img_03.jpg" alt=""></td>
+            <td><img src="image/img_05.jpg" alt=""></td>
+        </tr>
+    </tbody>
+
+    <tbody>
+        <tr>
+            <td rowspan="3">真题解析班</td>
+            <td>行测+申论</td>
+            <td>全国历年真题解析</td>
+            <td rowspan="3">课后详细简介，赠送24小时答疑服务</td>
+            <td>48</td>
+            <td>1280元</td>
+            <td><img src="image/img_03.jpg" alt=""></td>
+            <td><img src="image/img_05.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <!-- <td>01</td> -->
+            <td>行测</td>
+            <td>全科整体解析</td>
+            <!-- <td>04</td> -->
+            <td>48</td>
+            <td style="color:red;">980元</td>
+            <td><img src="image/img_03.jpg" alt=""></td>
+            <td><img src="image/img_05.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <!-- <td>01</td> -->
+            <td>申论</td>
+            <td>申论历年真题解析</td>
+            <!-- <td>04</td> -->
+            <td>16</td>
+            <td>580元</td>
+            <td><img src="image/img_03.jpg" alt=""></td>
+            <td><img src="image/img_05.jpg" alt=""></td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>

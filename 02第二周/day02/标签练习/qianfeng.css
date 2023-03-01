@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 头部开始 */
+.toubu {
+    width: 1000px;
+    height: 62px;
+    background-color: green;
+}
+
+.toubu1 {
+    width: 256px;
+    height: 62px;
+    background-color: blue;
+    float: left;
+}
+
+.toubu2 {
+    width: 744px;
+    height: 62px;
+    background-color: chartreuse;
+    float: left;
+}
+
+/* 头部结束 */
+
+/* 广告区域开始 */
+.guanggao {
+    width: 1000px;
+    height: 421px;
+    background-color: red;
+}
+
+/* 广告区域结束 */
+
+/* 信息开始 */
+.msg {
+    width: 1000px;
+    height: 354px;
+    background: orange;
+}
+
+.msg1,
+.msg2,
+.msg3,
+.msg4 {
+    width: 250px;
+    height: 354px;
+    background-color: rgb(136, 205, 182);
+    float: left;
+}
+
+/* 信息结束 */
+
+/* 新闻开始 */
+.new {
+    width: 1000px;
+    height: 308px;
+    background: rgb(220, 123, 123);
+}
+
+.new1 {
+    width: 301px;
+    height: 308px;
+    background-color: khaki;
+}
+
+.new2 {
+    width: 336px;
+    height: 308px;
+    background-color: darkorchid;
+}
+
+.new3 {
+    width: 363px;
+    height: 308px;
+    background-color: beige;
+}
+
+.new1,
+.new2,
+.new3 {
+    float: left;
+}
+
+/* 新闻结束 */
+
+/* 地图开始 */
+.map {
+    width: 1000px;
+    height: 214px;
+    background-color: bisque;
+}
+
+.map1 {
+    width: 491px;
+    height: 214px;
+    background-color: rgb(229, 197, 158);
+}
+
+.map2 {
+    width: 316px;
+    height: 214px;
+    background-color: rgb(174, 96, 247);
+}
+
+.map3 {
+    width: 193px;
+    height: 214px;
+    background-color: coral;
+}
+
+.map1,
+.map2,
+.map3 {
+    float: left;
+}
+
+/* 地图结束 */
+
+/* 底部开始 */
+.foot {
+    width: 1000px;
+    height: 45px;
+    background-color: aquamarine;
+}
+
+/* 底部结束 */

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 头部区域 */
+        .toubu {
+            width: 1037px;
+            height: 35px;
+            background-color: #000;
+
+        }
+
+        /* 导航区域 */
+        .nav {
+            width: 1037px;
+            height: 86px;
+            background-color: aqua;
+        }
+
+        .nav-left {
+            width: 198px;
+            height: 86px;
+            background-color: rgb(145, 212, 81);
+            float: left;
+        }
+
+        .nav-center {
+            width: 588px;
+            height: 86px;
+            background-color: rgb(210, 103, 128);
+            float: left;
+        }
+
+        .nav-right {
+            width: 251px;
+            height: 86px;
+            background-color: rgb(226, 172, 184);
+            float: left;
+        }
+
+        /* 广告区域 */
+        .ad {
+            width: 1037px;
+            height: 387px;
+            background-color: aqua;
+        }
+
+        .ad1 {
+            width: 198px;
+            height: 387px;
+            background-color: rgb(15, 87, 63);
+            float: left;
+        }
+
+        .ad2 {
+            width: 839px;
+            height: 387px;
+            background-color: rgb(34, 92, 72);
+            float: left;
+        }
+
+        /* 信息区 */
+        .info {
+            width: 1037px;
+            height: 143px;
+            background-color: red;
+            padding-top: 14px;
+            padding-bottom: 22px;
+        }
+
+        .info1 {
+            width: 198px;
+            height: 145px;
+            background-color: bisque;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .info2,
+        .info3,
+        .info4 {
+            width: 264px;
+            height: 145px;
+            background-color: rgb(132, 89, 26);
+            float: left;
+            margin-left: 10px;
+        }
+
+        /* 小米闪购 */
+        .shang {
+            width: 1037px;
+            height: 53px;
+        }
+
+        /* 闪购商品区 */
+        .shangping {
+            width: 1037px;
+            height: 288px;
+            background-color: rgb(180, 122, 234);
+        }
+
+        .shan1,
+        .shan,
+        .shan2 {
+            width: 197px;
+            height: 288px;
+            background-color: rgb(233, 117, 117);
+            float: left;
+        }
+
+        .shan1,
+        .shan {
+            margin-right: 13px;
+        }
+
+        /* 小米9 */
+        .xiaomi9 {
+            width: 1037px;
+            height: 122px;
+            background-color: rgb(149, 212, 191);
+        }
+        .fenge{
+            width: 1037px;
+            height: 67px;
+            background-color: bisque;
+        }
+        /* 手机区域 */
+        .phone{
+            width: 1037px;
+            height: 517px;
+            background-color: darkkhaki;
+        }
+        .phone-l{
+            width: 197px;
+            height: 517px;
+            background-color: rgb(184, 150, 216);
+            float: left;
+            margin-right: 13px;
+        }
+        .phone-r{
+            width: 827px;
+            height: 517px;
+            background-color: rgb(151, 81, 217);
+            float: left;
+        }
+       .r1,.r2,.r3,.r4,.r5,.r6,.r7,.r8{
+            width: 197px;
+            height: 252px;
+            background-color: rgb(111, 111, 228);
+            float: left;
+        }
+        .r1,.r2,.r3,.r4{
+            margin-bottom: 12px;
+        }
+        .r1,.r2,.r3,.r5,.r6,.r7{
+            margin-right: 13px;
+        }
+        /* 小米电视区 */
+        .tv{
+            width: 1037px;
+            height: 198px;
+            background-color: rgb(185, 178, 72);
+            overflow: hidden;
+        }
+        .tv-img{
+            width: 1037px;
+            height: 104px;
+            background-color: rgb(100, 67, 200);
+            margin-top: 30px;
+        }
+        .tv-text{
+            width: 1037px;
+            height: 66px;
+            background-color: aqua;
+        }
+        /* 家电区 */
+        .jiadian{
+            width: 1037px;
+            height: 522px;
+            background-color: darkgreen;
+        }
+        .jiadian div{
+            width: 197px;
+            height: 257px;
+            background-color: rgb(50, 206, 206);
+            float: left;
+        }
+        .j1,.j2,.j3,.j4,.j5{
+            margin-bottom: 8px;
+        }
+        .j1,.j2,.j3,.j4,.j6,.j7,.j8,.j9{
+            margin-right: 13px;
+        } 
+        .j10-top{
+            width: 197px;
+            height: 123px;
+            background-color: darkmagenta;
+        }
+        .j10-bottom{
+            width: 197px;
+            height: 123px;
+            background-color: rgb(214, 139, 214);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div class="toubu"></div>
+    <!-- 导航区域 -->
+    <div class="nav">
+        <div class="nav-left"></div>
+        <div class="nav-center"></div>
+        <div class="nav-right"></div>
+    </div>
+    <!-- 广告区域 -->
+    <div class="ad">
+        <div class="ad1"></div>
+        <div class="ad2"></div>
+    </div>
+    <!-- 信息区 -->
+    <div class="info">
+        <div class="info1"></div>
+        <div class="info2"></div>
+        <div class="info3"></div>
+        <div class="info4"></div>
+    </div>
+    <!-- 小米闪购 -->
+    <div class="shang"></div>
+    <!-- 闪购商品区 -->
+    <div class="shangping">
+        <div class="shan1"></div>
+        <div class="shan"></div>
+        <div class="shan"></div>
+        <div class="shan"></div>
+        <div class="shan2"></div>
+    </div>
+    <!-- 小米9 -->
+    <div class="xiaomi9"></div>
+    <!-- 分隔区域 -->
+    <div class="fenge"></div>
+    <!-- 手机区域 -->
+    <div class="phone">
+        <div class="phone-l"></div>
+        <div class="phone-r">
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+            <div class="r4"></div>
+            <div class="r5"></div>
+            <div class="r6"></div>
+            <div class="r7"></div>
+            <div class="r8"></div>
+        </div>
+    </div>
+    <!-- 小米电视区 -->
+    <div class="tv">
+        <div class="tv-img"></div>
+        <div class="tv-text"></div>
+
+    </div>
+    <!-- 家电区 -->
+    <div class="jiadian">
+        <div class="j1"></div>
+        <div class="j2"></div>
+        <div class="j3"></div>
+        <div class="j4"></div>
+        <div class="j5"></div>
+        <div class="j6"></div>
+        <div class="j7"></div>
+        <div class="j8"></div>
+        <div class="j9"></div>
+        <div class="j10">
+            <div class="j10-top"></div>
+            <div class="j10-bottom"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .boss{
+            width: 500px;
+            height: 500px;
+            background: green;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            display: none;
+        }
+        .boss:hover .box{
+            display: block;
+            background: deeppink;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="boss">
+    <div class="box"></div>
+   </div> 
+</body>
+</html>

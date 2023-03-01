@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .boss{
+            width: 228px;
+            height: 160px;
+            background: pink;
+            margin: 100px auto;
+            position: relative;
+        }
+        .boss img{
+            width: 228px;
+            height: 160px;
+        }
+        .box{
+            width: 228px;
+            height: 27px;
+            background: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            line-height: 27px;
+            color: #fff;
+            font-size: 12px;
+            position: absolute;
+            left:0;
+            bottom: 0;
+            /* display: none; */
+            opacity: 0;
+            transition: 1s;
+        }
+        .boss:hover .box{
+            /* display: block; */
+            opacity: 1;
+        }
+        .box1{
+            width: 21px;
+            height: 27px;
+            background: #e3291c;
+            float: left;
+        }
+        .box2{
+            width: 197px;
+            height: 27px;
+            background: rgba(0, 0, 0, 0.3);
+            float: left;
+            padding-left: 10px;
+        }
+        .box2 p{
+            width: 207px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .boss a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="boss">
+        <a href="https//www.baidu.com" target="-blank">
+        <img src="image/img1.jpg" alt="">
+        <div class="box">
+            <div class="box1">1</div>
+            <div class="box2"><p>微信支付：告别收银台，告别排队绝对是全新的体验。</p></div>
+        </div>
+    </a>
+    </div>
+<!-- 
+    培训班：
+       +优势：有人陪伴，学习氛围好，学习资料全面（可以找到资料）。有人监督，容易自律
+       +劣势：花费贵，学的慢，主动学习能力不能很好地培养
+    自学：
+       +优势：进度快，自己把握进度 省钱
+       +劣势：容易不自律，自己找学习资料（小事），可能不全面
+ -->
+</body>
+</html>

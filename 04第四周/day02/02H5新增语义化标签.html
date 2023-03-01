@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        /* 头部区域 */
+        header{
+           width: 100%;
+           height: 82px;
+           background-color: #f47d31;
+           text-align: center;
+           line-height: 82px;
+        }
+        /* 中间部分 */
+        section{
+            width: 100%;
+            height: 441px;
+            background-color: #888888;
+            display: flex;
+            overflow: hidden;
+        }
+        nav{
+            /* width: 224px; */
+            margin-left: 10px;
+            margin-top: 21px;
+            margin-right: 10px;
+            flex:2.5;
+        }
+        nav h4{
+            height: 40px;
+            font-size: 16px;
+            text-align: center;
+            color: aliceblue;
+            font-weight: 600;
+            line-height: 40px;
+            /* margin-bottom: 5px; */
+        }
+        nav li{
+            height: 50px;
+            width: 197px;
+            color: #d98467;
+            font-size: 14px;
+            border-bottom: 3px solid #fff;
+            list-style: none;
+            line-height: 50px;
+            padding-left: 8px;
+        }
+        article{
+            flex:5;
+        }
+        article .box1{
+            /* width: 430px; */
+            height: 222px;
+            background-color: #fff;
+            margin: 10px 0;
+            overflow: hidden;
+            padding: 0 10px;
+        }
+        .sbox1,.sbox2{
+            /* width: 430px; */
+            height: 30px;
+            background-color: #f47d31;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            line-height: 30px;
+           
+       }
+       .sbox1{
+        margin-bottom: 18px;
+        margin-top: 10px;
+       }
+       article p{
+        color: 16px;
+        line-height: 20px;
+        margin-bottom: 18px;
+       }
+        article .box2{
+            /* width: 430px; */
+            height: 169px;
+            background-color: #fff;
+            overflow: hidden;
+            padding: 0 10px;
+        }
+        aside{
+            /* width: 183px; */
+            padding: 0 20px;
+            flex: 2.5;
+        }
+        aside h2{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            height: 58px;
+            line-height: 58px;
+            text-align: center;
+        }
+        mark{
+            font-weight: 600;
+        }
+        aside span{
+            color: #fff;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            word-break: break-all;
+            /* 允许任意非CJK(Chinese/Japanese/Korean)文本间的单词断行。 */
+        }
+        /* 尾部部分 */
+        footer{
+            width: 100%;
+            height: 80px;
+            background-color: #f47d31;
+            text-align: center;
+           line-height: 80px;
+        }
+        header h1,footer h1{
+            font-size: 56px;
+            color: aliceblue;
+            font-weight: 700;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <h1>Header</h1>
+    </header>
+    <!-- 内部结构 -->
+    <section>
+        <nav>
+            <h4>nav</h4>
+            <ul>
+                <li>link1</li>
+                <li>link2</li>
+                <li>link3</li>
+            </ul>
+        </nav>
+        <article >
+            <div class="box1">
+                <div class="sbox1"><span>Article Header</span></div>
+                <p>"Lorem ipsum dolor nunc aut njewnjdnewjndjwnedjwenjsjjndjewndjewndjwnjdnej"</p>
+                <p>"Lorem ipsum dolor nunc aut njewnjdnewjndjwnedjwenjsjjndjewndjewndjwnjdnej"</p>
+                <div class="sbox2"><span>Article Footer</span></div>
+            </div>
+            <div class="box2">
+                <div class="sbox1"><span>Article Header</span></div>
+                <p>HTML5:"Lorem ipsum dolor nunc aut njewnjdnewjndjwnedjwenjsjjndjewndjewndjwnjdnej"</p>
+                <div class="sbox2"><span>Article Footer</span></div>
+            </div>
+        </article>
+        <aside>
+            <h2>Aside</h2>
+            <mark>HTML5:</mark>
+            <span>"Lorem ipsum dolor nunc aut njew njdnewj ndjwnedjw enjsj jndjewn djewn djwn jdnej nin1 hsoh oshi "</span>
+        </aside>
+    </section>
+    <!-- 尾部区域 -->
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>

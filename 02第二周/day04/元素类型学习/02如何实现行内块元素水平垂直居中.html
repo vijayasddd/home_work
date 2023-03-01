@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .box{
+            width: 1000px;
+            height: 1000px;
+            background-color: aqua;
+            text-align: center;
+            line-height: 1000px;
+        }
+        .box img{
+            vertical-align: middle;
+        }
+        /* 先给父元素添加text-align：center；实现水平居中
+           给父元素添加line-height：1000px,但是还没有垂直居中
+           给行内块元素本身添加vertical-align：middle；垂直居中属性和行高配合使用就是实现垂直居中效果 */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../image/liuyifei.jpeg" alt="">
+    </div>
+</body>
+</html>

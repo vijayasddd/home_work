@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .boss{
+            width: 116px;
+            height: 74px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .boss img{
+            width: 116px;
+            height: 74px;
+        }
+        .boss::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-100%,-50%);
+            width: 70px;
+            height: 37px;
+            border: 1px solid #555;
+            border-right: 0;
+
+        }
+        .boss::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(100%,-50%);
+            width: 70px;
+            height: 74px;
+            border: 1px solid #555;
+            border-left: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="boss">
+        <img src="image/i2.png" alt="">
+    </div>
+</body>
+</html>

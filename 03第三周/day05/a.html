@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            color: white;
+        }
+
+        .row {
+            height: 29px;
+            line-height: 29px;
+            margin-bottom: 13px;
+        }
+
+
+        .row span {
+            text-align-last: justify;
+            width: 3em;
+            display: inline-block;
+        }
+
+        .row .row-cmp {
+            width: 275px;
+            background-color: #ccc;
+            border: 0;
+            outline: 0;
+            height: 100%;
+        }
+
+
+        .special-row {
+            line-height: 128px;
+            height: 128px;
+        }
+
+        .special-row .row-cmp {
+            width: 462px;
+            resize: none;
+        }
+
+        .footer {
+            padding-left: 4em;
+        }
+
+        .footer button {
+            background-color: #ccc;
+            border: 0;
+            padding: 6px 20px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="row">
+            <label><span>公司</span>：</label>
+            <input class="row-cmp" type="text">
+        </div>
+        <div class="row">
+            <label><span>联系人</span>：</label>
+            <select class="row-cmp">
+                <option value="asd">asd</option>
+            </select>
+        </div>
+        <div class="row special-row">
+            <label><span>公司</span>：</label>
+            <textarea class="row-cmp"></textarea>
+        </div>
+        <footer class="footer">
+            <button type="submit">发送您的需求</button>
+            <button type="reset">重置</button>
+        </footer>
+    </form>
+    <!-- <div style="height: 100px;line-height: 100px;">
+        <input type="text">
+    </div> -->
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;  /*第一步；先设置宽度*/
+            height: 300px;
+            background-color: aqua;
+            white-space: nowrap;/*第二步，不换行，让文本单行显示*/
+            overflow: hidden;/*第三步，超出的内容隐藏*/
+            text-overflow: ellipsis;/*第四步，超出的内容显示为省略号*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容</div>
+</body>
+</html>

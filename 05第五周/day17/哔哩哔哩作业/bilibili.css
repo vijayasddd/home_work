@@ -1,0 +1,228 @@
+html{
+    font-size: calc(100vw / 7.5);
+}
+/* 搜索 */
+.sousuo{
+    width: 100%;
+    height: .79rem /* 79/100 */;
+    padding:.2rem /* 20/100 */ .24rem /* 24/100 */ 0 .29rem /* 29/100 */;
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fefefe;
+
+}
+.input{
+    width: 4.46rem /* 446/100 */;
+    height: 100%;
+    background-color: #f4f4f4;
+    border-radius: .4rem /* 40/100 */;
+    display: flex;
+    padding: 0 .22rem /* 22/100 */;
+    justify-content: space-between;
+    align-items: center;
+}
+.input input{
+    outline: none;
+    border: 0;
+    background-color: #f4f4f4;
+}
+.input i{
+    color: #cccccc;
+    font-size: .24rem /* 24/100 */;
+}
+.sousuo>i{
+    color: #828282;
+    font-size: .34rem /* 34/100 */;
+    font-weight: 900;
+}
+.sousuo img{
+    width: .52rem /* 52/100 */;
+    height: .6rem /* 60/100 */;
+}
+
+
+/* 导航区域 */
+nav{
+    width: 100%;
+    height: .95rem /* 95/100 */;
+    background-color: #fff;
+    display: flex;
+    color: #757575;
+    font-size: .3rem /* 30/100 */;
+    padding: 0 .25rem /* 25/100 */;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+nav a:nth-child(2){
+    color: #ea7a99;
+    font-size: .36rem /* 36/100 */;
+    border-bottom: .03rem /* 3/100 */ solid #ea7a99;
+}
+/* 广告区域 */
+.banner{
+    width: 100%;
+    height: 3.92rem /* 392/100 */;
+    background-color: #f4f4f4;
+    padding: .2rem /* 20/100 */ .25rem /* 25/100 */;
+    border-top: .01rem /* 1/100 */ solid #dfdbdb;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+/* 内容区域 */
+section{
+    width: 100%;
+    background-color: #f4f4f4;
+    margin-bottom: 1rem /* 100/100 */;
+}
+section ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+section ul li{
+    width: 3.4rem /* 340/100 */;
+    height: 3.64rem /* 364/100 */;
+    box-shadow: .01rem /* 1/100 */ .01rem /* 1/100 */ .01rem /* 1/100 */ .01rem /* 1/100 */ #ccc;
+    list-style: none;
+    margin-bottom: .2rem /* 20/100 */;
+    border-left: .01rem /* 1/100 */ solid #ccc;
+    position: relative;
+    
+}
+.im img{
+    width: 3.4rem /* 340/100 */;
+    height: 2.16rem /* 216/100 */;
+    border-radius: .1rem /* 5/100 */ .1rem /* 5/100 */ 0 0;
+}
+section ul li h6{
+    color: #232323;
+    font-size: .26rem /* 26/100 */;
+    margin: .1rem 0.2rem .15rem /* 20/100 */;
+}
+section ul li p{
+    color: #fff;
+    font-size: .2rem /* 20/100 */;
+    width: 1rem /* 100/100 */;
+    height: .3rem /* 30/100 */;
+    background-color: #eda26b;
+    border-radius: .1rem /* 10/100 */;
+}
+.zan{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.2rem;
+}
+.div{
+    width: .25rem /* 25/100 */;
+    height: .4rem /* 40/100 */;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box{
+    width: .06rem /* 6/100 */;
+    height: .06rem /* 6/100 */;
+    background-color: #c2b8b8;
+    border-radius: 50%;
+}
+.dingwei{
+    width: 100%;
+    height: .5rem /* 50/100 */;
+    display: flex;
+    color: #fff;
+    font-size: .16rem /* 16/100 */;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 1.4rem /* 73/100 */;
+}
+.dingwei i{
+    font-size: .26rem /* 26/100 */;
+    font-weight: 800;
+}
+/* 底部 */
+footer{
+    width: 100%;
+    height: 1rem /* 100/100 */;
+    border-top: .01rem /* 1/100 */ solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    color: #7e7e7e;
+    font-size: .2rem /* 20/100 */;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+}
+
+footer .f1 i{
+    color: #7e7e7e;
+    font-size: .4rem /* 40/100 */;
+    font-weight: 800;
+}
+footer span{
+    display: block;
+}
+.f1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f1:nth-child(1){
+    color: #ea7a99;
+}
+.f1:nth-child(1) i{
+    color: #ea7a99;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 导航区域开始 */
+/* 导航区域结束 */
+
+/* 广告区域开始 */
+/* 广告区域结束 */
+
+/* 服务区域开始 */
+/* 服务区域结束 */
+
+/* 案例区域开始 */
+/* 案例区域结束 */
+
+
+/* 新闻区域开始 */
+/* 新闻区域结束 */
+
+/* 信息区域开始 */
+/* 信息区域结束 */
+
+
+/* 尾部区域开始 */
+/* 尾部区域结束 */

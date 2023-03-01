@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* flex盒子布局 */
+        /* .contain{
+            width: 100%;
+            height: 800px;
+            border: 1px solid #555;
+            display: flex;
+        }
+        .box1{
+            width: 200px;
+            height: 100%;
+            background-color: aquamarine;
+
+        }
+        .box2{
+            height: 100%;
+            background-color: rgb(149, 234, 171);
+            flex: 1;
+        } */
+
+        /* float和overflow：hidden； */
+        /* .contain{
+            width: 100%;
+            height: 800px;
+            border: 1px solid #555;
+        }
+        .box1{
+            width: 200px;
+            height: 100%;
+            background-color: aquamarine;
+            float: left;
+        }
+        .box2{
+            height: 100%;
+            background-color: rgb(149, 234, 171);
+           overflow: hidden;
+        }  */
+
+
+        /* 定位加margin-left */
+        /* .contain {
+            width: 100%;
+            height: 800px;
+            border: 1px solid #555;
+            position: relative;
+        } */
+
+        .box1 {
+            width: 200px;
+            height: 900px;
+            background-color: aquamarine;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .box2 {
+            height: 900px;
+            background-color: rgb(86, 193, 115);
+            margin-left: 200px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="contain">
+    <div class="box1"></div>
+    <div class="box2"></div>
+</div>
+</body>
+</html>

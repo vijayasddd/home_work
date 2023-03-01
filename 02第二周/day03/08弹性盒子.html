@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(238, 247, 247);
+            display: flex;
+            /* 父元素中添加display:flex;将其设置为弹性容器 */
+            flex-direction: row;
+            /* 这个属性表示的是弹性容器内的弹性子元素的排列方向，其中row是默认方向，也就是水平排列
+               column是垂直方向    row-reverse表示的是水平方向翻转，column-reverse同上*/
+            justify-content: end;
+            /* 水平方向居中 */
+            align-items: center;
+            /* 垂直方向居中 */
+
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            flex: 3;
+            /* 这里的3表示的是8分之3 */
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(134, 78, 207);
+            flex: 4;
+              /* 这里的3表示的是8分之4 */
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            flex: 1;
+              /* 这里的3表示的是8分之1*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

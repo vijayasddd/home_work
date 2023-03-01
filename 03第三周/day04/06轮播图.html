@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .bg-box{
+            width: 164px;
+            height: 180px;
+            position: relative;
+            
+        }
+        .boss{
+            width: 164px;
+            height: 40px;
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+        }
+        .boss li{
+            width: 40px;
+            height: 40px;
+            background: pink;
+            float: left;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 1px;
+        }
+        .boss a{
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+
+        .content{
+            width: 164px;
+            height: 180px;
+            overflow: hidden;
+           
+        }
+        .content img{
+            width: 164px;
+            height: 180px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="bg-box">
+        <div class="boss">
+            <ul>
+                <li><a href="#m1">1</a></li>
+                <li><a href="#m2">2</a></li>
+                <li><a href="#m3">3</a></li>
+                <li><a href="#m4">4</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <img id="m1" src="image/img04.jpg" alt="">
+            <img id="m2" src="image/img05.jpg" alt="">
+            <img id="m3" src="image/img06.jpg" alt="">
+            <img id="m4" src="image/img07.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

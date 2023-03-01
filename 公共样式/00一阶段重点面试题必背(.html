@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		1.样式引入的方式有哪几种？
+		<!--
+		1.内部样式   <style>  /*在里面写css*/   </style>
+		2.外部样式   <link rel="stylesheet" href="路径">
+					<style>
+						@import url(路径);
+					</style>
+		3.内联(行内、行间)样式   <div style="color:red;"></div>
+		-->
+		2.W3C标准盒模型包含哪些内容？
+		<!--
+		4个部分   内容区content  内边距padding  边框border  外边距margin
+		W3C标准盒模型特点：就是给元素添加padding和border的时候，会把元素的宽高给撑大，所以默认情况下，如果想保持元素原本大小，就需要做减法。
+		-->
+		3.怎么用css边框画箭头超下的三角形？
+		<!--
+		思路：首先写一个标签，写4个方向的边框，上边框给颜色，其他3个方向边框颜色给透明，最后宽高为0；
+		-->
+		4.什么是css样式层叠？(css权重问题)
+		<!--
+		对于标签的样式，很多时候，我们会针对标签添加多个样式，有时候是样式覆盖，有时候是样式继承；于是样式之间就有权重的问题。
+		!important > 内联样式1000 > id选择器100 > class选择器10 > 标签选择器1
+		-->
+		5.单行文本超出显示省略号效果怎么实现？
+		<!--
+		1.给元素添加 width;
+		2.让文本一行显示 white-space:nowrap;
+		3.让超出部分隐藏 overflow:hidden;
+		4.添加省略号  text-overflow:ellipsis;
+		-->
+		6.什么是css的继承？请写出可以被继承的属性，至少10个。
+		<!--
+		给父元素或者祖宗添加了样式，后代就会有对应的样式，就是继承。
+		color font-size  font-style font-family font-weight  line-height text-align text-decoration  text-transform letter-spacing 
+		list-style text-indent
+		-->
+		7.元素类型分为哪几种？分别有什么特点？
+		<!--
+		分为3种：
+		1.块状元素 
+			特点：1.竖着排列，独占一行或者一块区域；
+				 2.可以添加宽高，添加margin和padding 上下左右都有效；
+				 3.一般作为其他元素的父元素使用。
+		2.行内（内联）元素
+			特点：1.挨着排列，有默认的间距；
+				  2.添加宽高无效，margin和padding只有左右有效，上下不生效
+		3.行内块元素
+			特点：1.就是块元素和行内元素的特点的综合
+				  2.有一个自己的私有属性 vertical-align:top/middle/bottom;
+		4.可变元素
+			特点：1.根据某一些css属性的特点，可以改变元素的类型，比如：给元素添加了float，元素就会成为块元素（隐式转块）
+		-->
+		8.图片向下撑大3像素的bug怎么解决？
+		<!--这是图片自带的兼容bug，如果图片下方有内容的时候有默认间隙，就需要解决
+		1.给图片添加display:block;
+		2.给图片本身添加vertical-align:top/middle/bottom;
+		3.给图片或者图片的父元素添加float;
+		4.给父元素或者body添加font-size:0;
+		-->
+		9.未知大小的行内块元素怎么实现水平垂直居中效果？
+		<!--
+		思路：给外层的大盒子添加text-align:center;让行内块先水平居中；再给外层的大盒子添加line-height，且给行内块元素本身添加vertical-align:middle;同时实现行内块做垂直居中效果。
+		-->
+		10.元素消失和出现的方法有哪些？
+		<!--
+		1.display:none;和display:block; 让元素彻底消失，一般不会结合transition做过渡效果；
+		2.opacity:0;和opacity:1; 让元素占位隐藏，一般会结合transition做过渡效果；
+		3.visibility:hidden;和visibility:visible;让元素占位隐藏,一般用于万能清除法里做兼容使用
+		4.height:0;overflow:hidden;和height:100px;overflow:auto;一般结合hover做一些鼠标滑过效果
+		-->
+		11.定位的属性值有哪些？分别有什么特点？
+		<!-- 
+		 1.绝对定位  position:absolute;
+			特点:
+				1.文档流  脱离文档流，不占位置了
+				2.参照物
+					2.1默认情况下，参照浏览器的第一屏做位置移动；
+					2.2参考有定位设置(最好是相对定位)的父元素做位置移动。
+				3.层级关系  z-index  值越大，元素就在最上层（针对定位元素生效）可以取负值
+					
+		 2.相对定位  position:relative;
+			特点:
+				1.文档流  没有脱离文档流，占位置在
+				2.参照物  参照自己原来的位置做移动
+				3.层级关系  z-index  值越大，元素就在最上层（针对定位元素生效）
+				
+		 3.固定定位  position:fixed;
+			特点:
+				1.文档流  脱离文档流，不占位置了
+				2.参照物  参照整个浏览器的窗口
+				3.层级关系  z-index  值越大，元素就在最上层（针对定位元素生效）
+				
+		 4.粘性定位  position:sticky;  主要做吸顶效果
+			特点:
+				1.文档流  没有脱离文档流，占位置在
+				2.参照物  参照整个浏览器的窗口
+				3.层级关系  z-index  值越大，元素就在最上层（针对定位元素生效）
+				
+		 5.默认值  position:static;
+		 -->
+		12.一个宽高200*200的小盒子在一个宽高为500*500的大盒子里面做水平垂直居中，请问你有几种实现方案？(8种)
+		<!--
+			已知宽高做水平垂直居中
+		1.纯margin + overflow:hidden;
+		2.纯padding + box-sizing:border-box;
+		3.纯定位
+		4.定位 left:50%;top:50%; + margin取负值
+		5.定位 left:0;top:0;right:0;bottom:0; + margin:auto;
+		   未知宽高做水平垂直居中
+		6.定位 left:50%;top:50%; + transform:translate(-50%,-50%);
+		7.转为行内块元素做水平垂直居中：display:inline-block; + text-align:center; + line-height + vertical-align:middle;
+		8.弹性盒 display:flex; + justify-content:center; + align-items:center;  
+		-->
+		13.高度塌陷问题怎么解决？(6个)
+		<!--
+		高度塌陷：子元素添加float,父元素或者祖先没有给高度的情况下，父元素会出现高度为0的情况。
+		1.给父元素添加height; 只适合高度固定的布局，比如导航
+		2.给父元素添加overflow:hidden/auto/scroll; 遇到有定位的时候尽量不要用
+		3.给浮动元素的下方添加一个空的块元素，并且给这个空的块元素添加clear:both;此方法会造成代码的冗余
+		4.万能清除法。取一个公共类名，将这个公共类名给到浮动元素的父元素添加即可；
+		.clear::after{
+			content:"";
+			display:block;
+			clear:both;
+			height:0;
+			overflow:hidden;
+			visibility:hidden;
+		}
+		.clear{
+			zoom:1;
+		}
+		5.给父元素添加float;会造成新的浮动问题，不推荐使用，做了解；
+		6.给父元素添加display:table; 会造成未知bug,不推荐使用，做了解。
+		-->
+		14.margin-top的bug怎么解决？
+		<!--
+		bug的产生，给子元素添加margin-top之后，会造成父元素整个下移；
+		1.给父元素添加overflow:hidden;
+		2.给父元素添加border-top:1px solid transprent;
+		给父元素设置一个边框（子元素作用在父元素身上是因为不知道父元素的边界，所以设置边框可以解决这个问题，但是有一个弊端，也会增加像素，所以还是要减去边框的高度）
+		3.给父元素或者子元素本身添加float;
+		4.把子元素的margin-top改为父元素的padding，注意减去padding的距离
+		-->
+		15.五大浏览器对应内核是什么？
+		<!--
+		IE浏览器     Trident
+		火狐浏览器    Gecko
+		苹果、谷歌浏览器  webkit
+		欧朋浏览器  前内核 presto   现内核 blink
+		-->
+		16.opacity是什么？它的兼容写法是什么样子的？
+		<!--
+		opacity:0.3;filter:alpha(opacity=30);
+		-->
+		17.什么是BFC？BFC触发条件有哪些？
+		<!--
+		BFC直译意思是"块级格式化上下文"，可以理解为它是页面中一块独立的渲染区域，这块区域里面的元素有自己的排列规则，不会影响外部的元素，而且不是所有的元素都能成为BFC区域的元素，需要满足一定的条件才可以；
+		BFC触发条件：
+		1.html本身；
+		2.给元素添加float:left/right;
+		3.给元素添加了position:absolute/fixed;
+		4.给元素添加了display:inline-block/table-cell/table-caption/flex/inline-flex;
+		5.给元素添加了overflow:hidden/auto/scroll;
+		-->
+		18.BFC有哪些特性？这些特性给页面带来了什么好处？
+		<!--
+		1.bfc区域上下排列的盒子如果都给了margin值，会发生margin的重叠问题。
+		margin的重叠问题：给任何一个盒子添加一个父元素，让父元素触发BFC即可；
+		2.BFC区域不与float的盒子发生重叠；由此引出了两栏布局
+		3.解决了高度塌陷问题。
+		-->
+		19.请问什么是两栏布局？实现方案有哪些？
+		<!--
+		两栏布局：左边盒子固定宽，右边盒子宽度自适应
+		实现方案：
+		1.利用BFC特性，左边盒子给固定宽和float，右边盒子不给宽，给overflow:hidden;
+		2.利用float的特点：左边盒子给固定宽和float，右边盒子不给宽，给margin-left;
+		3.利用弹性盒的特点，给2个盒子添加一个父元素，给父元素添加display:flex;给右边的盒子添加flex:1;
+		4.利用calc()函数特点，左边盒子给固定宽和float，右边盒子给宽(calc(100% - 左边width))和float;
+		-->
+		20.什么是怪异盒模型？怪异盒是什么产生的？有什么特点？怎么变怪异盒？
+		<!--
+		由于DOCTYPE文档声明的缺失，在IE6以及以下版本的浏览器会触发怪异模式，怪异模式展现出来的特点是，给元素添加padding或者border值的时候，元素不会被撑大，后来就利用这一特点做页面布局，于是css3新增了一个属性，可以有w3c标准盒模型变成怪异盒模型 box-sizing:border-box;
+		-->
+		21.H5有什么特点？请写出H5新增加的标签。（8个）
+		<!--
+		H5的特点：语法宽松、代码简洁、标签语义化、多设备跨平台、响应式网页等
+		<header> <section> <footer> <nav> <aside> <article> <video> <audio> <datalist> <canvas>等
+		-->
+		22.什么是图片整合技术？有什么优势？
+		<!--
+		图片整合技术就是将页面中很多小图整在一张大图里面，然后利用background-position技术实现。
+		优势：1.可以提高网站的加载速度；2.减少图片的体积。
+		-->
+		23.请问你会哪些css选择器？
+		<!-- 基本类型(class、id、群组选择器等)、属性选择器、伪类选择器(动态伪类、UI元素状态伪类、结构伪类child类型和type类型等)、层次选择器(包含选择器、子代选择器等)。 -->
+		24.css3属性有什么特点和优势？请说8个css3属性。
+		<!--
+		特点和优势：1.有兼容写法；2.可以让页面看起来更加的酷炫；3.可以增加网站的访问量，从而提升网站的排名；
+		text-shadow/box-shadow/word-break:break-all/word-wrap:break-word/background-size/border-radius/border-image/transition/animation/transform等
+		-->
+		25.transition和animation有什么共同点和区别？
+		<!--
+		共同点：1.都是css3属性，用来做动画的；2.都是随着时间变化的属性
+		区别：
+		1.transition必须要有事件触发才有效果，而animation不需要事件触发；
+		2.transition只能实现一种状态到另外一种状态的改变；而animation可以实现多种状态的改变。
+		-->
+		26.请问transform:translateX(100px) rotateZ(90deg);和transform:rotateZ(90deg) translateX(100px);实现的效果是一样的吗？为什么？
+		<!--不一样，轴系发生了改变，前者是首先向右平移了100px,然后绕着Z轴旋转90deg,而后者是先向Z轴旋转90deg，因为此时此刻轴系已经发生了改变，所以后来的translateX(100px)是沿着改变后的轴系进行的平移，所以前者和后者的执行的效果是不一样的。-->
+		27.三栏布局有哪些实现方法？
+		<!--
+		三栏布局：左边固定宽，右边固定宽，中间宽度自适应
+		实现方案：
+		1.利用BFC特性，左边盒子给宽和浮动，右边盒子也给宽和浮动，中间盒子不给宽，给overflow:hidden;（需要将中间的盒子和右边的盒子换位置）;
+		2.利用float的特点，左边盒子给宽和浮动，右边盒子也给宽和浮动，中间盒子不给宽，给margin-left和margin-right;（需要将中间的盒子和右边的盒子换位置）;
+		3.利用定位，左边盒子给宽和定位，右边盒子也给宽和定位，中间盒子不给宽，给margin-left和margin-right;（不需要换位置）
+		4.利用弹性盒，给三个盒子添加父元素，给父元素添加display:flex;给中间宽度自适应的盒子添加flex:1;
+		5.利用calc()函数特性，左边盒子给宽和浮动，右边盒子也给宽和浮动，中间盒子给宽(calc(100% - 左宽 - 右宽))和浮动。
+		-->
+		28.请问那些属性可以取负值？请说出5个。
+		<!--
+		margin/background-position/text-shadow/box-shadow/z-index/order等
+		-->
+		29.移动端布局方式有哪些？移动端的适配方案有哪些？
+		<!-- 浮动布局、弹性盒布局、定位布局、流式布局(百分比布局)、混合布局(%,px等)、等比缩放布局(vw + rem布局)等；适配方案有2种：1种是淘宝适配，使用js适配；2种是网易适配(vw + rem布局)。 -->
+		30.什么是响应式布局？有什么特点？
+		<!--
+		Responsive 网页设计不但要考虑其元素布局的秩序，还要做到“有求必应”，因此需要满足四个条件。
+		1、网站必须建立灵活的网格基础；
+		2、引用到网站的图片必须是可伸缩的；
+		3、不同的显示风格，需要在Media Query上设置不同的样式
+		4、meta标签
+		注意：缺少任何一个功能，就不能称为是合格的Responsive 网页设计
+		-->
+	</body>
+</html>

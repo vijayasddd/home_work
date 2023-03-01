@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .big-box{
+            width: 480px;
+            background-color: #9cbc2b;
+        }
+        .box1{
+            width: 422px;
+            /* height: 204px; */
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .box2{
+            width: 80%;
+            height: 265px;
+            margin: 0 auto;
+        }
+        .row{
+            width: 400px;
+            height: 45px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            /* text-align: left; */
+            line-height: 45px;
+            margin-bottom: 5px;
+        }
+        .row .cmp{
+            border: 0;
+            outline: none;
+            width: 216px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            margin-left: 60px;
+            padding-left: 5px;
+        }
+        .row label{
+            margin-left: 1em;
+        }
+        input::placeholder{
+            color: #b8b4b4;
+            
+        }
+        .box1 h2{
+            color:#333232;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 11px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="big-box">
+        <div class="box1">
+            <h2>Step1:Your details</h2>
+            <div class="row">
+                <label for="">Name</label>
+                <input class="cmp" type="text" placeholder="first and last name">
+            </div>
+        <div class="row">
+            <label for="">Email</label>
+            <input class="cmp" type="email" placeholder="example@domain.com">
+        </div>
+        <div class="row">
+            <label for="">Phone</label>
+            <input class="cmp" type="text" placeholder="Eg.+447500000000">
+        </div>
+    </div>
+        
+        <div class="box2">
+                <h2>Step2:Your details</h2>
+                <div class="row">
+                    <label for="">Address</label>
+                    <textarea class="tebie" id="" cols="30" rows="10"></textarea>
+                </div>
+            <div class="row">
+                <label for="">post code</label>
+                <input class="cmp" type="email" >
+            </div>
+            <div class="row">
+                <label for="">country</label>
+                <input class="cmp" type="text" >
+            </div>
+        </div>
+    </div>
+</body>
+</html>

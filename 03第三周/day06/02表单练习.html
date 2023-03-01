@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .box{
+            width: 418px;
+            /* border: 1px solid #555; */
+            margin-top: 100px ;
+            margin-left: 100px;
+        }
+        textarea{
+            resize: none;
+        }
+        .la1{
+            display: block;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form >
+            <p>*所在项为必填项</p>
+            <fieldset>
+                <legend>个人信息</legend>
+                <div class="row">
+                    <label for="">姓名*</label>
+                    <input type="text">
+                </div>
+                <div class="row">
+                    <label for="">地址*</label>
+                    <input type="text">
+                </div>
+                <div class="row">
+                    <label for="">出生*</label>
+                    <select>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                    <select>
+                        <option value="">jan</option>
+                        <option value="">may</option>
+                        <option value="">nar</option>
+                        <option value="">jly</option>
+                    </select>
+                    <select>
+                        <option value="">1988</option>
+                        <option value="">1989</option>
+                        <option value="">1990</option>
+                        <option value="">1991</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="">性别</label>
+                    <select name="" id="">
+                        <option value="six">女</option>
+                        <option value="six">男</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>其他信息</legend>
+               
+                <div class="box1">
+                    <label  class="la1" for="">你喜欢这个表单吗？*</label>
+                    <input type="radio" name="love">喜欢
+                    <input type="radio" name="love">不喜欢
+                </div>
+                <div class="box1">
+                    <label class="la1" for="">你喜欢什么运动？*</label>
+                    <input type="checkbox" value="lo">足球
+                    <input type="checkbox" value="lo">篮球
+                    <input type="checkbox" value="lo">排球
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>请写下你的建议？*</legend>
+                <textarea name="" id="" cols="30" rows="10">
+                </textarea>
+            </fieldset>
+            <button class="submit"type="submit">提交个人信息</button>
+
+        </form>
+    </div>
+</body>
+</html>

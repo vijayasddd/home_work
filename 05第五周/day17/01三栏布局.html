@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+      
+        .left{
+            width: 200px;
+            height: 300px;
+            background-color: aqua;
+            float: left;
+            
+            
+        }
+        .center{
+            height: 300px;
+            background-color: rgb(21, 90, 90);
+            float: left;
+            width: calc(100% - 200px - 300px);
+            
+            
+        }
+        .right{
+            width: 300px;
+            height: 200px;
+            background-color: cornflowerblue;
+            float: left;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="boss">
+    <div class="left"></div>
+
+    <div class="center"></div>
+    <div class="right"></div>
+</div>
+<!-- 如何实现三栏布局
+    三栏布局是左右固定宽，中间宽度自适应
+1、利用BFC特性，bfc区域与浮动区域不重叠，左边和右边给固定宽和左浮动 右浮动，中间不给宽，给overflow-hidden；因为中间不给宽，就占满了这一行，所以把中间盒子和右边盒子交换位置
+2、浮动实现，左浮动和右浮动。中间不给宽，给margin-left和margin-right 
+3、全部给浮动和宽度，中间的宽度用calc（）函数来计算，calc（100%-左宽-右宽），注意给父元素添加clear清浮
+4、定位来做，左边和右边相对视口做好定位，中间不给宽，但是需要加margin，因为绝对定位脱离文档流了
+5、用弹性盒子来做，给他们一个父元素，在父元素身上添加display：flex；左右给固定宽，中间给flex：1；把剩余空间都给中间的盒子
+
+
+-->
+   
+   
+</body>
+</html>
