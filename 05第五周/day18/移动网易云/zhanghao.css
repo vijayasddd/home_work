@@ -1,0 +1,341 @@
+html {
+    font-size: calc(100vw / 7.5);
+}
+
+body {
+    font-size: .16rem
+        /* 16/100 */
+    ;
+    background-color: #eeeff0;
+}
+
+/* 头部 */
+header {
+    width: 100%;
+    height: .87rem
+        /* 87/100 */
+    ;
+    display: flex;
+    padding: 0 .23rem
+        /* 23/100 */
+        0 .2rem
+        /* 20/100 */
+    ;
+    background-color: #d43c33;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    justify-content: flex-end;
+}
+
+header h2 {
+    color: #fff;
+    font-size: .32rem
+        /* 34/100 */
+    ;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+}
+
+header i {
+    color: #fff;
+    font-weight: 900;
+    font-size: .52rem
+        /* 42/100 */
+    ;
+}
+
+/* 信息区域 */
+.info {
+    width: 100%;
+    margin-top: 0.87rem;
+    background-color: #fff;
+}
+
+.info-top {
+    width: 100%;
+    height: 1.87rem
+        /* 187/100 */
+    ;
+    display: flex;
+    padding: 0 .2rem
+        /* 20/100 */
+        0 .3rem
+        /* 30/100 */
+    ;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .01rem /* 1/100 */ solid #ccc;
+}
+
+.info-top1 {
+    display: flex;
+    align-items: center;
+}
+
+.info-top1 img {
+    width: 1.22rem
+        /* 122/100 */
+    ;
+    height: 1.22rem
+        /* 122/100 */
+    ;
+    border-radius: 50%;
+    margin-right: .22rem
+        /* 22/100 */
+    ;
+}
+
+.sign {
+    font-size: 0;
+    width: 1.25rem
+        /* 125/100 */
+    ;
+    height: .51rem
+        /* 51/100 */
+    ;
+    border-radius: .25rem
+        /* 25/100 */
+    ;
+    border: .01rem
+        /* 1/100 */
+        solid #d43c33;
+    text-align: center;
+    line-height: .5rem
+        /* 50/100 */
+    ;
+    color: #d43c33;
+
+}
+
+.sign i,
+.sign span {
+    font-size: .24rem
+        /* 24/100 */
+    ;
+}
+
+.sign i {
+    font-size: .3rem
+        /* 40/100 */
+    ;
+    font-weight: 900;
+}
+
+.word p:nth-child(1) {
+    color: #323233;
+    font-size: .34rem
+        /* 34/100 */
+    ;
+    margin-bottom: .16rem /* 20/100 */;
+}
+
+.word p:nth-child(2) {
+    font-size: .24rem
+        /* 24/100 */
+    ;
+    font-weight: 800;
+    text-align: center;
+   
+    color: #adaeae;
+    width: .71rem
+        /* 71/100 */
+    ;
+    height: .34rem
+        /* 34/100 */
+    ;
+    border: .01rem
+        /* 1/100 */
+        solid #adaeae;
+    border-radius: .2rem
+        /* 20/100 */
+    ;
+
+}
+.info-bottom{
+    width: 100%;
+    margin: .23rem /* 23/100 */ 0;
+    padding-bottom: .23rem /* 23/100 */;
+}
+.info-bottom ul{
+    width: 100%;
+    display: flex;
+}
+.info-bottom ul li{
+    width: 1.88rem /* 188/100 */;
+    height: .59rem /* 59/100 */;
+    border-right: .01rem /* 1/100 */ solid #ccc;
+    text-align: center;
+}
+.info-bottom ul li:last-child{
+    position: relative;
+}
+.hong{
+    width: .2rem /* 20/100 */;
+    height: .2rem /* 20/100 */;
+    border-radius: 50%;
+    background-color: #d43c33;
+    position: absolute;
+    left: 1.13rem /* 113/100 */;
+    top: -.06rem /* 10/100 */;
+}
+.info-bottom ul li:last-child{
+    border-right: 0;
+}
+.info-bottom ul li p{
+    color: #979798;
+}
+.info-bottom ul li i{
+    color: #979798;
+    font-size: .28rem /* 28/100 */;
+}
+
+/* 内容区域 */
+section{
+    width: 100%;
+    margin-bottom: 1rem /* 100/100 */;
+}
+section ul{
+    width: 100%;
+}
+section ul li{
+    width: 100%;
+    display: flex;
+    height: 0.9rem;
+    font-size: .3rem /* 30/100 */;
+    background-color: #fff;
+    /* align-items: center; */
+}
+section ul li:nth-child(2){
+    position: relative;
+}
+.hong1{
+    width: .2rem /* 20/100 */;
+    height: .2rem /* 20/100 */;
+    border-radius: 50%;
+    background-color: #d43c33;
+    position: absolute;
+    left: 2.3rem /* 113/100 */;
+    top:.29rem /* 10/100 */;
+}
+section ul li span{
+    color: #979798;
+}
+.dian{
+    width: .48rem /* 48/100 */;
+    height: .36rem /* 36/100 */;
+    background-color: #d43c33;
+    border-radius: .2rem /* 15/100 */;
+    color: #fff;
+    text-align: center;
+    line-height: .36rem;
+
+}
+
+.li-right{
+    flex: 1;
+    display: flex;
+    height: 100%;
+    padding-right: .21rem /* 21/100 */;
+    justify-content: space-between;
+    color: #323233;
+    align-items: center;
+    border-bottom: .01rem /* 1/100 */ solid #e8e4e4;
+}
+.list i{
+    color: #adaeae;
+    font-size: .40rem /* 32/100 */;
+    font-weight: 900;
+}
+.li-left{
+    width: .88rem /* 88/100 */;
+    height: 100%;
+    text-align: center;
+    line-height: .9rem /* 90/100 */;
+    
+}
+.li-left i{
+    color: #a09da1;
+    font-size: .4rem /* 40/100 */;
+}
+section ul li:nth-child(1){
+    margin-bottom: .2rem /* 20/100 */;
+    border-bottom: 0;
+}
+section ul li:nth-child(1) .li-right{
+
+    border-bottom: 0;
+}
+section ul li:nth-child(1) .li-right p{
+margin-right: auto;
+    border-bottom: 0;
+}
+section ul li:nth-child(4){
+    margin-bottom: .2rem /* 20/100 */;
+}
+section ul li:nth-child(4) .li-right{
+
+    border-bottom: 0;
+}
+section ul li:nth-child(9) .li-right i{
+  font-size: .6rem /* 60/100 */;
+}
+section ul li:nth-child(2) .li-right p{
+    margin-right: auto;
+  }
+  section ul li:nth-child(8) .li-right p{
+    margin-right: auto;
+  }
+
+
+
+
+
+
+/* 底部区域 */
+footer{
+    width: 100%;
+    height: 1rem /* 100/100 */;
+    background-color: rgba(39, 39, 37,.9);
+    position: fixed;
+    bottom: 0;
+}
+footer ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer ul li{
+    color: #989795;
+    height: 100%;
+    font-size: .2rem /* 20/100 */;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .2rem /* 4/100 */;
+}
+footer ul li i{
+    font-weight: 900;
+    font-size: .46rem /* 46/100 */;
+    margin-bottom: .08rem /* 8/100 */;
+}
+footer ul li:nth-child(4){
+    color: #fff;
+    position: relative;
+}
+.dian1{
+    width: .48rem /* 48/100 */;
+    height: .36rem /* 36/100 */;
+    background-color: #d43c33;
+    border-radius: .2rem /* 15/100 */;
+    color: #fff;
+    text-align: center;
+    line-height: .36rem;
+    position: absolute;
+    left: .32rem;
+    top: .1rem;
+
+}
+    
