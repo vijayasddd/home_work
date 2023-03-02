@@ -169,6 +169,10 @@ footer ul li{
     align-items: center;
     padding-top: .2rem /* 4/100 */;
 }
+footer ul li a{
+    color: #989795;
+    font-size: .2rem /* 20/100 */;
+}
 footer ul li i{
     font-weight: 900;
     font-size: .46rem /* 46/100 */;
