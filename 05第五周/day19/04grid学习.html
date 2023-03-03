@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .boss{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            margin:  20px 30px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-template-areas: 
+            "a a a"
+            "b b c"
+            "b b c"
+            ;
+            grid-row-gap: 8px;
+            grid-column-gap:8px;
+            grid-gap: 8px;/* 行距  列距*/
+        }
+        .box:nth-child(1){
+            background-color: aqua;
+            grid-area: a;
+        }
+        .box:nth-child(2){
+            background-color: rgb(130, 225, 82);
+            grid-area: b;
+        }
+        .box:nth-child(3){
+            background-color: rgb(108, 99, 229);
+            grid-area: c;
+        }
+    </style>
+</head>
+<body>
+    <div class="boss">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

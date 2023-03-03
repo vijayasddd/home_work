@@ -1,0 +1,457 @@
+/* 导航区域开始 */
+.big-nav {
+    width: 100%;
+}
+
+.nav {
+    width: 1240px;
+    height: 66px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-left img {
+    width: 90px;
+    height: 40px;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li {
+    padding: 0 10px;
+}
+
+.nav-left ul li i {
+    color: #aeaeae;
+    font-size: 8px;
+}
+
+.nav-left ul li a {
+    color: #2e425c;
+}
+
+.nav-right {
+    display: flex;
+    height: 100%;
+}
+
+.nav-right>div {
+    width: 76px;
+    height: 100%;
+    line-height: 66px;
+    text-align: center;
+}
+
+.nav-r1 {
+    background-color: #f2f1f0;
+
+}
+
+.nav-r1 a {
+    color: #807c7c;
+}
+
+.lan {
+    background-color: #0c2340;
+}
+
+
+/* 导航区域结束 */
+
+/* 广告区域开始 */
+.big-banner {
+    width: 100%;
+    height: 700px;
+
+}
+
+.big-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.ding {
+    width: 1240px;
+    height: 80px;
+    display: flex;
+    margin: 0 auto;
+    transform: translateY(-100%);
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.ding1 {
+    display: flex;
+}
+
+.ding1 h1 {
+    color: #fff;
+    font-size: 44px;
+    padding-right: 20px;
+    border-right: 2px solid #ccc;
+}
+
+.ding1 p {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 20px;
+    line-height: 80px;
+}
+
+.ding2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ding2 button {
+    width: 94px;
+    height: 35px;
+    border: 10px;
+    background-color: #fff;
+    color: #2e425c;
+    text-align: center;
+    line-height: 35px;
+}
+
+.dian {
+    width: 100px;
+    height: 16px;
+    display: flex;
+}
+
+.dian>div {
+    width: 13px;
+    height: 13px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
+/* 广告区域结束 */
+
+/* 服务区域开始 */
+.big-serve {
+    width: 100%;
+    background-color: #f2f1f0;
+}
+
+.serve {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.serve-top {
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+}
+
+.serve-top h3 {
+    color: #1c1b1b;
+    font-size: 36px;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+.serve-top p {
+    color: #514843;
+    font-size: 16px;
+}
+
+/* 服务区域结束 */
+
+
+/* 下面区域 */
+.xia {
+    width: 100%;
+}
+
+.serve-bottom {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.serve-bottom ul {
+    display: flex;
+}
+
+.serve-bottom ul li {
+    width: 33.3%;
+    /* height: 436px; */
+    text-align: center;
+}
+
+.list li h6 {
+    color: #171712;
+    font-size: 16px;
+    margin: 36px 0 32px 0;
+}
+
+.list li:not(.li3) {
+    background: url(images/index_03.jpg) no-repeat right center;
+}
+
+.p1,
+.p2 {
+    color: #3d3a3b;
+    font-size: 12px;
+    line-height: 32px;
+    margin-bottom: 47px;
+}
+
+.p2+img {
+    margin-bottom: 27px;
+}
+
+.p3 {
+    color: #514843;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.p4 {
+    color: #2a2624;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.list button {
+    width: 105px;
+    height: 32px;
+    font-size: 12px;
+    border: 2px solid #514843;
+    border-radius: 4px;
+    color: #171712;
+    text-align: center;
+    line-height: 32px;
+    background-color: #fff;
+    margin-bottom: 6px;
+}
+
+/* 案例区域开始 */
+.big-case {
+    width: 100%;
+}
+
+.case {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.case1 {
+    width: 100%;
+    height: 114px;
+    overflow: hidden;
+
+}
+
+.case1 h2 {
+    color: #171712;
+    font-size: 36px;
+    margin-top: 48px;
+}
+
+.case2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tu {
+    width: 301px;
+    height: 325px;
+    position: relative;
+}
+
+.tu img {
+    width: 100%;
+    height: 100%;
+}
+
+.tu h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    left: 22px;
+    bottom: 22px;
+}
+
+.case3 {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.case3>div {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 2px solid #2e425c;
+    margin-right: 4px;
+}
+
+.case3>div:first-child {
+    background-color: #1c1b1b;
+}
+
+/* 案例区域结束 */
+
+
+/* 新闻区域开始 */
+.big-new {
+    width: 100%;
+    height: 300px;
+    background-color: #f2f1f0;
+}
+
+.new {
+    width: 1240px;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.new img {
+    margin: 67px 0 7px 0;
+}
+
+.new h4 {
+    color: #1c1b1b;
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.new p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    color: #514843;
+}
+
+.new button {
+    width: 95px;
+    height: 35px;
+    background-color: #0c2340;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+}
+
+/* 新闻区域结束 */
+
+/* 信息区域开始 */
+.big-information {
+    width: 100%;
+    background-color: #333333;
+    overflow: hidden;
+}
+
+.information {
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+.info1 {
+    display: flex;
+    width: 100%;
+    height: 165px;
+    color: #aeaeae;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.info-left {
+    width: 976px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.info-left ul {
+    width: 33.3%;
+    height: 100%;
+    margin-top: 36px;
+    line-height: 22px;
+}
+
+.info-right {
+    width: 264px;
+    height: 165px;
+    border-left: 2px solid #ccc;
+    overflow: hidden;
+    padding-left: 40px;
+}
+.china{
+    margin-top: 36px;
+    margin-bottom: 31px;
+    
+}
+.china .s2{
+    padding-left: 10px;
+    border-left: 1px solid #ccc;
+}
+.s1{
+    padding-right: 48px;
+}
+.info-right p{
+    margin-bottom: 10px;
+}
+.info-right button{
+    width: 180px;
+    height: 30px;
+    background-color: #333333;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.info2{
+    width: 100%;
+    height: 195px;
+    text-align: center;
+    color: #fff;
+
+}
+.im{
+    margin-top: 25px;
+    margin-bottom: 34px;
+}
+.xian{
+    width: 400px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+.info2>img{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* 信息区域结束 */
+
+
+/* 尾部区域开始 */
+/* 尾部区域结束 */

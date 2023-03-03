@@ -74,6 +74,7 @@
 		2.opacity:0;和opacity:1; 让元素占位隐藏，一般会结合transition做过渡效果；
 		3.visibility:hidden;和visibility:visible;让元素占位隐藏,一般用于万能清除法里做兼容使用
 		4.height:0;overflow:hidden;和height:100px;overflow:auto;一般结合hover做一些鼠标滑过效果
+		5、结合定位来做，可以设置元素相对视口做定位，取负值
 		-->
 		11.定位的属性值有哪些？分别有什么特点？
 		<!-- 
@@ -112,7 +113,7 @@
 		2.纯padding + box-sizing:border-box;
 		3.纯定位
 		4.定位 left:50%;top:50%; + margin取负值
-		5.定位 left:0;top:0;right:0;bottom:0; + margin:auto;
+		5.定位 left:0;top:0;right:0;bottom:0; + margin:auto;  {注意，这里一定要知道子元素的宽高，才能用margin：auto，否则这个内容会被拉伸适应父元素大小}
 		   未知宽高做水平垂直居中
 		6.定位 left:50%;top:50%; + transform:translate(-50%,-50%);
 		7.转为行内块元素做水平垂直居中：display:inline-block; + text-align:center; + line-height + vertical-align:middle;

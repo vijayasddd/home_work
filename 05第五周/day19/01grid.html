@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .boss {
+            width: 300px;
+            height: 400px;
+            margin: 100px auto;
+            border: 2px solid #000;
+            display: grid;
+            /* grid-template-columns: 100px 100px 100px; */
+            /* 这里表示设置了三列，并且给了列宽 */
+
+            /* grid-template-columns: repeat(auto-fill,50px); */
+            /* auto-fill 关键字，表示的是50px的列宽，会尽量撑满父元素，直到放不下为止 */
+
+            /* grid-template-columns:repeat(2,20px 80px 30px) ; */
+
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 80px 80px 80px 80px;
+            /* 这里表示设置了三行，并且给了行宽 */
+        }
+
+        .box {
+            /* 宽高就不给了，用grid里面的行宽和列宽来设置 */
+            border: 3px solid red;
+            color: #000;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .box:nth-child(1) {
+            background-color: aqua;
+        }
+
+        .box:nth-child(2) {
+            background-color: rgb(172, 233, 103);
+        }
+
+        .box:nth-child(3) {
+            background-color: rgb(83, 132, 132);
+        }
+
+        .box:nth-child(4) {
+            background-color: rgb(226, 119, 203);
+        }
+
+        .box:nth-child(5) {
+            background-color: rgb(226, 211, 122);
+        }
+
+        .box:nth-child(6) {
+            background-color: rgb(205, 124, 151);
+        }
+
+        .box:nth-child(7) {
+            background-color: rgb(43, 188, 188);
+        }
+
+        .box:nth-child(8) {
+            background-color: rgb(160, 78, 111);
+        }
+
+        .box:nth-child(9) {
+            background-color: rgb(155, 225, 85);
+        }
+
+        .box:nth-child(10) {
+            background-color: rgb(202, 111, 207);
+        }
+
+        .box:nth-child(11) {
+            background-color: rgb(233, 169, 80);
+        }
+
+        .box:nth-child(12) {
+            background-color: rgb(188, 219, 137);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boss">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+</body>
+
+</html>
