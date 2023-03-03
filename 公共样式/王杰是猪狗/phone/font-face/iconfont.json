@@ -1,0 +1,93 @@
+{
+  "id": "2474020",
+  "name": "qq",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6840779",
+      "name": "浏览",
+      "font_class": "liulan",
+      "unicode": "e714",
+      "unicode_decimal": 59156
+    },
+    {
+      "icon_id": "9546122",
+      "name": "新朋友",
+      "font_class": "scrm-app-icon_huabanfuben",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "9746751",
+      "name": "三角形",
+      "font_class": "triangle-right",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11346404",
+      "name": "联系人",
+      "font_class": "caidantubiao-",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "12971959",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "14819805",
+      "name": "消 息",
+      "font_class": "xiaoxi",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "16163955",
+      "name": "群聊",
+      "font_class": "qunliao",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "18616074",
+      "name": "公众号",
+      "font_class": "gongzhonghao",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "19685100",
+      "name": "电脑",
+      "font_class": "diannao",
+      "unicode": "e6dd",
+      "unicode_decimal": 59101
+    },
+    {
+      "icon_id": "19769927",
+      "name": "动态",
+      "font_class": "dongtai",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "20047949",
+      "name": "加号",
+      "font_class": "jiahao",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "20650732",
+      "name": "评 论",
+      "font_class": "pinglun",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    }
+  ]
+}

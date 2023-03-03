@@ -1,0 +1,365 @@
+/* 导航区域开始 */
+.big-nav {
+    width: 100%;
+    height: 66px;
+    background-color: #1e1e1e;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    width: 1163px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.nav-left {
+    width: 456px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-right: 7px;
+}
+
+.logo img {
+    width: 118px;
+    height: 66px;
+}
+.wenzi{
+    overflow: hidden;
+    color: #d1d2e4;
+    font-size: 10px;
+    padding-left: 7px;
+    font-weight: 400;
+}
+.kong{
+    width: 0;
+    height: 34px;
+    border-left: 2px solid #988e8e;
+}
+.wenzi .p1{
+    margin-bottom: 7px;
+    margin-top: 8px;
+}
+
+.nav-right {
+    width: 707px;
+    height: 100%;
+    display: flex;
+}
+.right-nav{
+    margin-right: 30px;
+}
+.list{
+
+}
+.list li{
+    font-size: 0;
+    text-align: center;
+    line-height:66px ;
+
+}
+.list li a{
+    color: #ccc;
+    font-size: 12px;
+    padding: 0 16px;
+}
+.right-r{
+    display: flex;
+    text-align: right;
+    color: #ccc;
+    align-items: center;
+}
+.right-r1{
+    margin-right: 10px;
+}
+.right-r2{
+    margin-left: 20px;
+}
+.right-kong{
+    width: 0;
+    height: 30px;
+    border-left: 2px solid #ccc;
+}
+.right-r1 span{
+    font-size: 10px;
+    color: #ccc;
+    margin-bottom: 4px;
+}
+.right-r1 p{
+    color: #d1d2e4;
+    font-size: 12px;
+}
+.right-r2 img{
+    width: 21px;
+    height: 21px;
+}
+
+/* 导航区域结束 */
+
+/* 广告区域开始 */
+.big-banner{
+    width: 100%;
+    height: 534px;
+    margin-top: 66px;
+}
+.big-banner img{
+    width: 100%;
+    height: 100%;
+}
+/* 广告区域结束 */
+
+/* 服务区域开始 */
+.big-serve{
+    width: 100%;
+}
+.serve{
+    width: 1163px;
+    margin: 0 auto;
+}
+.serve-top{
+    width: 100%;
+    height: 144px; 
+    text-align: center;  
+}
+.serve-top h2{
+    color: #1e1e1e;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 30px 0 10px 0;
+}
+.serve-bottom{
+    width: 100%;
+    height: 315px;
+    padding: 0 184px;
+    display: flex;
+}
+.box{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.box img{
+    height: 93px;
+}
+.box h4{
+    color: #2c2b2b;
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+    font-weight: 500;
+}
+.box p{
+    color: #2f2b2b;
+    font-weight: 500;
+    font-size: 10px;
+}
+.box p:last-of-type{
+    margin-bottom: 23px;
+}
+.box ul li{
+    color: #c7c7c7;
+    font-size: 10px;
+    line-height: 18px;
+}
+/* 服务区域结束 */
+
+/* 案例区域开始 */
+.big-case{
+    width: 100%;
+}
+.case{
+    width: 1163px;
+    margin: 0 auto;
+}
+.case-top{
+    width: 100%;
+    height: 111px;
+    text-align: center;
+}
+.case-top h2{
+    color: #1e1e1e;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 30px 0 10px 0;
+
+}
+.case-bottom{
+    width: 100%;
+    height:332px;
+    display: flex;
+}
+.case-box{
+    width: 33.3%;
+    height: 100%;
+    overflow: hidden;
+}
+.tu{
+    width: 100%;
+    height: 219px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+.case-box img{
+    width: 100%;
+    height: 219px;
+    transition: .3s linear;
+}
+.case-box img:hover{
+    transform: scale(1.2);
+}
+.case-box p{
+    color: #8f8f8f;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.case-box span{
+    color: #494747;
+    font-size:10px;
+}
+/* 案例区域结束 */
+
+
+/* 新闻区域开始 */
+.big-new{
+    width: 100%;
+}
+.new{
+    width: 1163px;
+    margin: 0 auto;
+}
+.new-top{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.new-top h2{
+    color: #1e1e1e;
+    font-size: 18px;
+    margin-bottom: 13px;
+}
+.new-top p{
+    height: 0;
+    width: 35px;
+    border-bottom: 2px solid #309ef5;
+    margin: 0 auto;
+}
+.new-bottom{
+    width: 100%;
+    padding: 0 194px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+.new-bottom>div{
+    height: 60px;
+    /* background-color: #494747; */
+    flex-shrink: 0;
+    width: 25%;
+    margin-bottom: 50px;
+    background-position: 5px -189px;
+    transition: .4s linear;
+}
+.new-box1{
+    background: url(images/anli1.png) no-repeat left top;
+}
+.new-box2{
+    background: url(images/anli2.png) no-repeat left top;
+}
+.new-box3{
+    background: url(images/anli1.png) no-repeat left top;
+}
+.new-box4{
+    background: url(images/anli8.png) no-repeat left top;
+}
+.new-box5{
+    background: url(images/anli8.png) no-repeat left top;
+}
+.new-box6{
+    background: url(images/anli9.png) no-repeat left top;
+}
+.new-box7{
+    background: url(images/anli18.png) no-repeat left top;
+}
+.new-box8{
+    background: url(images/anli18.png) no-repeat left top;
+}
+.new-bottom>div:hover{
+    background-position: 5px -37px;
+}
+/* 新闻区域结束 */
+
+
+
+
+/* 尾部区域开始 */
+.big-footer{
+    width: 100%;
+    height: 200px;
+    background: url(images/footer-bg_02.jpg) no-repeat;
+    background-size: cover;
+}
+.footer{
+    width: 1163px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 40px 170px 0;
+}
+.footer-top{
+   width: 100%;
+   height: 120px;
+   display: flex;
+}
+.f-left{
+    height: 100%;
+    width: 495px;
+}
+.f-left1{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+.f-left1 h5{
+    color: #a9b4c6;
+    font-size: 16px;
+    margin-right: 49px;
+}
+.f-left2{
+    color: #988e8e;
+    font-size: 10px;
+    display: flex;
+}
+.f-left2 ul{
+    margin-right: 40px;
+}
+
+
+.f-right{
+    width: 330px;
+    height: 100%;
+    text-align: right;
+}
+.f-right h6{
+    color: #1ea1f9;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.f-right p{
+    color: #8f8f8f;
+    font-size: 12px;
+    line-height: 20px;
+
+}
+.footer-bottom{
+    display: flex;
+    color: #8f8f8f;
+    justify-content: space-between;
+}
+
+/* 尾部区域结束 */
